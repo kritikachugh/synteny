@@ -70,26 +70,25 @@ echo "Pre-run checks completed."
 echo ""
 
 # --- Step 1: Extract Upstream/Downstream Gene Context ---
-echo "--- [Step 1/7] Running upstream_downstream_gene_id.py ---"
-$PYTHON_EXECUTABLE "$SCRIPT_DIR/upstream_downstream_gene_id.py" \
- --presence_absence_csv "$INITIAL_GENE_PRESENCE_ABSENCE_CSV" \
- --gff_dir "$GFF_DIR" \
- --missing_gene_out "$MISSING_GENE_DATA_CSV" \
- --upstream_downstream_out "$UPSTREAM_DOWNSTREAM_CSV"
-echo "Step 1 completed. Outputs: $MISSING_GENE_DATA_CSV, $UPSTREAM_DOWNSTREAM_CSV"
-echo ""
-
-# # --- Step 2: Perform Synteny Matching ---
-# echo "--- [Step 2/7] Running synteny_match.py ---"
-# check_file "$UPSTREAM_DOWNSTREAM_CSV"
-# $PYTHON_EXECUTABLE "$SCRIPT_DIR/synteny_match_plus_minus.py" \
-#  --input_context_csv "$UPSTREAM_DOWNSTREAM_CSV" \
+# echo "--- [Step 1/7] Running upstream_downstream_gene_id.py ---"
+# $PYTHON_EXECUTABLE "$SCRIPT_DIR/upstream_downstream_gene_id.py" \
+#  --presence_absence_csv "$INITIAL_GENE_PRESENCE_ABSENCE_CSV" \
 #  --gff_dir "$GFF_DIR" \
-#  --output_compare_csv "$COMPARE_GENES_CSV" \
-#  --output_matches_csv "$COMPARE_GENES_MATCHES_CSV" \
-#  --match_threshold 2
-# echo "Step 2 completed. Outputs: $COMPARE_GENES_CSV, $COMPARE_GENES_MATCHES_CSV"
+#  --missing_gene_out "$MISSING_GENE_DATA_CSV" \
+#  --upstream_downstream_out "$UPSTREAM_DOWNSTREAM_CSV"
+# echo "Step 1 completed. Outputs: $MISSING_GENE_DATA_CSV, $UPSTREAM_DOWNSTREAM_CSV"
 # echo ""
+
+# --- Step 2: Perform Synteny Matching ---
+echo "--- [Step 2/7] Running synteny_match.py ---"
+check_file "$UPSTREAM_DOWNSTREAM_CSV"
+$PYTHON_EXECUTABLE "$SCRIPT_DIR/synteny_match_plus_minus.py" \
+ --input_context_csv "$UPSTREAM_DOWNSTREAM_CSV" \
+ --gff_dir "$GFF_DIR" \
+ --output_compare_csv "$COMPARE_GENES_CSV" \
+ --match_threshold 2
+echo "Step 2 completed. Output: $COMPARE_GENES_CSV"
+echo ""
 
 # # --- Step 3: Add Core Status to Synteny Match Results ---
 # echo "--- [Step 3/7] Running add_core_gene_status.py ---"
