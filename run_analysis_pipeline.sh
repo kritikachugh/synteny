@@ -21,28 +21,28 @@ CDS_DIR="./data/input/cds_files/"
 GENOME_FASTA_DIR="./data/input/genome_fasta_files/"
 
 # --- Output Directories (Will be created if they don't exist) ---
-BLAST_OUTPUT_SUBDIR="./data/generated_output/blast_final_results/"
+BLAST_OUTPUT_SUBDIR="./output/blast_final_results/"
 
 # --- Optional: Path to BLAST+ binaries ---
-BLAST_PLUS_BIN_PATH="./blast_final_results/blast_bin/"  # ADJUST THIS or set to ""
+BLAST_PLUS_BIN_PATH="./output/blast_final_results/blast_bin/"  # ADJUST THIS or set to ""
 
 # --- Intermediate and Final Output Filenames ---
 # Script 1 outputs
-MISSING_GENE_DATA_CSV="missing_gene_data.csv"
-UPSTREAM_DOWNSTREAM_CSV="data_upstream_downstream.csv"
+MISSING_GENE_DATA_CSV="./output/missing_gene_data.csv"
+UPSTREAM_DOWNSTREAM_CSV="./output/data_upstream_downstream.csv"
 # Script 2 outputs
-COMPARE_GENES_CSV="compare_genes.csv"
-COMPARE_GENES_MATCHES_CSV="compare_genes_matches.csv"
+COMPARE_GENES_CSV="./output/compare_genes.csv"
+COMPARE_GENES_MATCHES_CSV="./output/compare_genes_matches.csv"
 # Script 3 output
-COMPARE_GENES_CORE_STATUS_CSV="compare_genes_core_status.csv"
+COMPARE_GENES_CORE_STATUS_CSV="./output/compare_genes_core_status.csv"
 # Script 4 output
-ALL_STRAINS_SORTED_WIDE_CSV="all_strains_sorted_with_id.csv"
+ALL_STRAINS_SORTED_WIDE_CSV="./output/all_strains_sorted_with_id.csv"
 # Script 5 output
-REVERSED_DF_FOR_BLAST_CSV="reversed_df_completeid.csv"
+REVERSED_DF_FOR_BLAST_CSV="./output/reversed_df_completeid.csv"
 # Script 6 output
-SEQUENCE_DATA_CSV="sequence_data.csv"
+SEQUENCE_DATA_CSV="./output/sequence_data.csv"
 # Script 7 output
-BLAST_NO_HITS_SUMMARY_CSV="blast_no_hits_summary.csv"
+BLAST_NO_HITS_SUMMARY_CSV="./output/blast_no_hits_summary.csv"
 
 # --- Helper function to check for file existence ---
 check_file() {
