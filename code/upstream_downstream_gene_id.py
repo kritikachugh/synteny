@@ -35,87 +35,75 @@ def parse_gff_to_df(gff_file_path):
     return pd.DataFrame(features)
 
 def extract_data_upstream_downstream(target_gene_id_from_roary, gff_df, strain_name, neighbors_count=5):
-    if gff_df.empty:
-        return None
-
-    for col_name in ['ID', 'locus_tag', 'gene']:
-        if col_name in gff_df.columns:
-            gff_df[col_name] = gff_df[col_name].astype(str).str.strip('"').str.strip()
-
-    if 'ID' in gff_df.columns and 'locus_tag' in gff_df.columns:
-        gff_df['Processed_ID'] = gff_df['ID'].fillna(gff_df['locus_tag'])
-    elif 'ID' in gff_df.columns:
-        gff_df['Processed_ID'] = gff_df['ID']
-    elif 'locus_tag' in gff_df.columns:
-        gff_df['Processed_ID'] = gff_df['locus_tag']
-    else:
-        return None
+    """Extract upstream and downstream genes around a given Roary ID."""
+    # Reset index to ensure unique indices
+    gff_df = gff_df.reset_index(drop=True)
     
-    id_matches = gff_df[gff_df['Processed_ID'].fillna('') == str(target_gene_id_from_roary)]
-    
-    target_cds_index = -1
+    # Sanitize string columns
+    if 'ID' in gff_df.columns:
+        gff_df['ID'] = gff_df['ID'].str.strip('"').str.strip()
+    if 'locus_tag' in gff_df.columns:
+        gff_df['locus_tag'] = gff_df['locus_tag'].str.strip('"').str.strip()
+    if 'gene' in gff_df.columns:
+        gff_df['gene'] = gff_df['gene'].str.strip('"').str.strip()
+
+    # Merge ID and locus_tag into a single ID column
+    if 'locus_tag' in gff_df.columns:
+        gff_df['ID'] = gff_df['ID'].fillna(gff_df['locus_tag'])
+
+    # Use loose matching to find the ID in the ID column
+    id_matches = gff_df[gff_df['ID'].fillna('').str.contains(str(target_gene_id_from_roary), na=False, case=False)]
+
     if not id_matches.empty:
+        target_index = id_matches.index[0]  # Get the index of the target gene
         for index, row in id_matches.iterrows():
-            if row.get('type') == 'CDS':
-                target_cds_index = index
+            if row['type'] == 'CDS':
+                target_index = index
                 break
-    
-    if target_cds_index == -1:
+
+        # --- Upstream genes ---
+        upstream_genes = []
+        upstream_genes_index = target_index - 1
+        while len(upstream_genes) < neighbors_count and upstream_genes_index >= 0:
+            if gff_df.iloc[upstream_genes_index]['type'] == 'CDS':
+                upstream_genes.append(gff_df.iloc[upstream_genes_index])
+            upstream_genes_index -= 1
+
+        upstream_genes = pd.DataFrame(upstream_genes).iloc[::-1]
+
+        # --- Downstream genes ---
+        downstream_genes = []
+        downstream_genes_index = target_index + 1
+        while len(downstream_genes) < neighbors_count and downstream_genes_index < len(gff_df):
+            if gff_df.iloc[downstream_genes_index]['type'] == 'CDS':
+                downstream_genes.append(gff_df.iloc[downstream_genes_index])
+            downstream_genes_index += 1
+
+        downstream_genes = pd.DataFrame(downstream_genes)
+
+        # Assign positions (update case to match output header)
+        if not upstream_genes.empty:
+            upstream_genes['position'] = range(-len(upstream_genes), 0)
+        if not downstream_genes.empty:
+            downstream_genes['position'] = range(1, len(downstream_genes) + 1)
+
+        # Extract and prepare self gene
+        self_gene = gff_df.iloc[target_index][['ID', 'type', 'gene', 'start', 'end', 'strand']].copy()
+        self_gene['position'] = 0  # Changed Position to position
+        self_gene_df = pd.DataFrame([self_gene])
+
+        # Combine all genes
+        combined_genes = pd.concat([upstream_genes, self_gene_df, downstream_genes], ignore_index=True)
+        
+        # Fill missing values and select columns (note lowercase 'position')
+        combined_genes['ID'] = combined_genes['ID'].fillna('Missing_ID')
+        combined_genes = combined_genes[['position', 'gene', 'ID', 'type', 'start', 'end', 'strand']]
+        combined_genes['strain'] = strain_name
+
+        return combined_genes
+    else:
+        print(f"No row found with ID: {target_gene_id_from_roary} for strain: {strain_name}")
         return None
-
-    upstream_genes_list = []
-    current_idx = target_cds_index - 1
-    while len(upstream_genes_list) < neighbors_count and current_idx >= 0:
-        if current_idx < len(gff_df) and gff_df.iloc[current_idx].get('type') == 'CDS':
-            upstream_genes_list.append(gff_df.iloc[current_idx])
-        current_idx -= 1
-    upstream_df = pd.DataFrame(upstream_genes_list).iloc[::-1]
-
-    downstream_genes_list = []
-    current_idx = target_cds_index + 1
-    while len(downstream_genes_list) < neighbors_count and current_idx < len(gff_df):
-        if gff_df.iloc[current_idx].get('type') == 'CDS':
-            downstream_genes_list.append(gff_df.iloc[current_idx])
-        current_idx += 1
-    downstream_df = pd.DataFrame(downstream_genes_list)
-
-    self_gene_cols_to_extract = ['ID', 'type', 'gene', 'start', 'end', 'strand']
-    self_gene_series_data = {}
-    for col in self_gene_cols_to_extract:
-        self_gene_series_data[col] = gff_df.loc[target_cds_index, col] if col in gff_df.columns else None
-    self_gene_series_data['ID'] = target_gene_id_from_roary
-
-    self_gene_df = pd.DataFrame([self_gene_series_data])
-    self_gene_df['Position'] = 0
-
-    if not upstream_df.empty:
-        upstream_df['Position'] = range(-len(upstream_df), 0)
-        if 'Processed_ID' in upstream_df.columns:
-            upstream_df.rename(columns={'Processed_ID': 'ID'}, inplace=True)
-        elif 'ID' not in upstream_df.columns and 'locus_tag' in upstream_df.columns:
-             upstream_df.rename(columns={'locus_tag': 'ID'}, inplace=True)
-
-    if not downstream_df.empty:
-        downstream_df['Position'] = range(1, len(downstream_df) + 1)
-        if 'Processed_ID' in downstream_df.columns:
-            downstream_df.rename(columns={'Processed_ID': 'ID'}, inplace=True)
-        elif 'ID' not in downstream_df.columns and 'locus_tag' in downstream_df.columns:
-             downstream_df.rename(columns={'locus_tag': 'ID'}, inplace=True)
-            
-    combined_df = pd.concat([upstream_df, self_gene_df, downstream_df], ignore_index=True)
-    
-    output_cols = ['Position', 'gene', 'ID', 'type', 'start', 'end', 'strand']
-    for col in output_cols:
-        if col not in combined_df.columns:
-            combined_df[col] = pd.NA
-    
-    combined_df['ID'] = combined_df['ID'].fillna('Missing_GFF_ID_In_Neighbor')
-    combined_df['gene'] = combined_df['gene'].fillna('Missing_GeneName')
-    
-    combined_df = combined_df[output_cols]
-    combined_df['strain'] = strain_name
-    return combined_df
-
 def add_core_status_and_central_gene(combined_genes_df, roary_gene_info_map, central_roary_gene_name_for_this_block):
     if combined_genes_df is None or combined_genes_df.empty:
         return None
