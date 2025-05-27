@@ -58,53 +58,30 @@ def parse_gff_to_df(gff_file_path):
     
     return df
 
-def extract_syntenic_region_around_anchor(anchor_gene_name, gff_df_of_target_strain, target_strain_name, neighbors_to_extract=9):
-    """Extract syntenic region around an anchor gene with improved ID handling."""
+def extract_syntenic_region_around_anchor(anchor_id, gff_df_of_target_strain, target_strain_name, neighbors_to_extract=9):
+    """Extract syntenic region around an anchor gene using ID/locus_tag matching."""
     if gff_df_of_target_strain.empty:
         return None
 
-    # Ensure 'ID', 'locus_tag', 'gene' are string type and stripped
-    for col in ['ID', 'locus_tag', 'gene']: 
+    # Clean string columns
+    for col in ['ID', 'locus_tag']:
         if col in gff_df_of_target_strain.columns:
             gff_df_of_target_strain[col] = gff_df_of_target_strain[col].astype(str).str.strip('"').str.strip()
 
-    # Create a unique identifier for each gene based on available columns
-    if 'ID' not in gff_df_of_target_strain.columns:
-        if 'locus_tag' in gff_df_of_target_strain.columns:
-            gff_df_of_target_strain['ID'] = gff_df_of_target_strain['locus_tag']
-        else:
-            # Generate IDs using strain name, gene name and position
-            gff_df_of_target_strain['ID'] = gff_df_of_target_strain.apply(
-                lambda row: f"{target_strain_name}_{row.get('gene', 'unknown')}_{row.name}",
-                axis=1
-            )
-
-    # Convert 'nan' strings to actual NaN values
-    gff_df_of_target_strain['ID'] = gff_df_of_target_strain['ID'].replace('nan', pd.NA)
-    
-    # Fill any remaining NaN IDs with generated IDs
-    gff_df_of_target_strain['ID'] = gff_df_of_target_strain['ID'].fillna(
-        gff_df_of_target_strain.apply(
-            lambda row: f"{target_strain_name}_pos_{row.name}_{row.get('gene', 'unknown')}", 
-            axis=1
-        )
-    )
-
-    # Find anchor gene matches
+    # Search by ID or locus_tag
     anchor_matches = gff_df_of_target_strain[
-        gff_df_of_target_strain['gene'].fillna('').str.contains(
-            str(anchor_gene_name), regex=False, na=False, case=False
-        )
+        (gff_df_of_target_strain['ID'].fillna('') == str(anchor_id)) |
+        (gff_df_of_target_strain['locus_tag'].fillna('') == str(anchor_id))
     ]
 
     anchor_cds_index = -1
     if not anchor_matches.empty:
         for index, row in anchor_matches.iterrows():
-            if row.get('type') == 'CDS': # [cite: 79]
+            if row['type'] == 'CDS':
                 anchor_cds_index = index
                 break
     
-    if anchor_cds_index == -1: # [cite: 79]
+    if anchor_cds_index == -1:
         return None
 
     # Upstream genes
@@ -126,7 +103,7 @@ def extract_syntenic_region_around_anchor(anchor_gene_name, gff_df_of_target_str
     downstream_df = pd.DataFrame(downstream_genes_list) # [cite: 80]
     
     # Self (anchor) gene - now uses the definitive 'ID' column
-    self_anchor_cols = ['ID', 'type', 'gene', 'start', 'end', 'strand']  # Uses 'ID' directly
+    self_anchor_cols = ['ID', 'type', 'gene', 'start', 'end', 'strand']  # Uses 'IDref_pos' directly
     self_anchor_series_data = {}
     for col_loop_var_anchor in self_anchor_cols: 
         self_anchor_series_data[col_loop_var_anchor] = gff_df_of_target_strain.loc[anchor_cds_index, col_loop_var_anchor] if col_loop_var_anchor in gff_df_of_target_strain.columns else None
@@ -339,23 +316,29 @@ def main():
                 if missing_strain_name not in gff_data_cache: # [cite: 92]
                     continue
                 gff_df_for_missing_strain = gff_data_cache[missing_strain_name] # [cite: 93
-                found_match_for_this_missing_strain = False # [cite: 93]
+                found_match_for_this_missing_strain = False # [cite: 93
 
-                for anchor_search_direction in ["upstream", "downstream"]: # [cite: 93]
-                    if found_match_for_this_missing_strain: break # [cite: 93]
+                for anchor_search_direction in ["upstream", "downstream"]: # [cite: 93
+                    if found_match_for_this_missing_strain: break # [cite: 93
                     ref_pos_range = range(-5, 0) if anchor_search_direction == "upstream" else range(1, 6) # [cite: 93]
                     
                     for ref_pos in ref_pos_range: # [cite: 94]
-                        anchor_gene_name_in_ref = get_anchor_gene_name(reference_context_df, ref_pos) # [cite: 94]
-                        if not anchor_gene_name_in_ref: # [cite: 94]
+                        anchor_row = reference_context_df[reference_context_df['position'] == ref_pos]
+                        if anchor_row.empty:
                             continue
+                            
+                        # Try to get ID first, then locus_tag
+                        anchor_id = anchor_row['ID'].iloc[0]
                         
-                        # Pass a copy of the gff_df to avoid modifying the cache
+                        # Extract block using ID
                         extracted_block_in_missing_strain = extract_syntenic_region_around_anchor(
-                            anchor_gene_name_in_ref, gff_df_for_missing_strain.copy(), missing_strain_name, neighbors_to_extract=9 
-                        ) #
+                            anchor_id,
+                            gff_df_for_missing_strain.copy(),
+                            missing_strain_name,
+                            neighbors_to_extract=9
+                        )
 
-                        if extracted_block_in_missing_strain is not None and not extracted_block_in_missing_strain.empty: # [cite: 96]
+                        if extracted_block_in_missing_strain is not None:
                             block_upstream_set, block_downstream_set = get_gene_sets_from_context(extracted_block_in_missing_strain) # [cite: 96]
                             num_upstream_matches = len(ref_upstream_set.intersection(block_upstream_set)) # [cite: 97
                             num_downstream_matches = len(ref_downstream_set.intersection(block_downstream_set)) # [cite: 97

@@ -80,15 +80,15 @@ echo ""
 # echo ""
 
 # --- Step 2: Perform Synteny Matching ---
-echo "--- [Step 2/7] Running synteny_match.py ---"
-check_file "$UPSTREAM_DOWNSTREAM_CSV"
-$PYTHON_EXECUTABLE "$SCRIPT_DIR/synteny_match_plus_minus.py" \
- --input_context_csv "$UPSTREAM_DOWNSTREAM_CSV" \
- --gff_dir "$GFF_DIR" \
- --output_compare_csv "$COMPARE_GENES_CSV" \
- --match_threshold 2
-echo "Step 2 completed. Output: $COMPARE_GENES_CSV"
-echo ""
+# echo "--- [Step 2/7] Running synteny_match.py ---"
+# check_file "$UPSTREAM_DOWNSTREAM_CSV"
+# $PYTHON_EXECUTABLE "$SCRIPT_DIR/synteny_match_plus_minus.py" \
+#  --input_context_csv "$UPSTREAM_DOWNSTREAM_CSV" \
+#  --gff_dir "$GFF_DIR" \
+#  --output_compare_csv "$COMPARE_GENES_CSV" \
+#  --match_threshold 2
+# echo "Step 2 completed. Output: $COMPARE_GENES_CSV"
+# echo ""
 
 # # --- Step 3: Add Core Status to Synteny Match Results ---
 # echo "--- [Step 3/7] Running add_core_gene_status.py ---"
@@ -101,7 +101,7 @@ echo ""
 # echo "Step 3 completed. Output: $COMPARE_GENES_CORE_STATUS_CSV"
 # echo ""
 
-# # --- Step 4: Create Wide Table (all_strains_sorted_with_id.csv) ---
+# --- Step 4: Create Wide Table (all_strains_sorted_with_id.csv) ---
 # echo "--- [Step 4/7] Running create_sorted_strains_table.py ---"
 # check_file "$UPSTREAM_DOWNSTREAM_CSV"
 # check_file "$COMPARE_GENES_CORE_STATUS_CSV"
