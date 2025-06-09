@@ -1,0 +1,1748 @@
+BLASTN 2.16.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ./data/input/genome_fasta_files/MG1655.fasta
+           1 sequences; 4,641,652 total letters
+
+
+
+Query= CFT073|2b84de5415a5ca9477dbe99a5510e5bf_5657:HGG68_RS13895:HGG68_RS1
+3895|2b84de5415a5ca9477dbe99a5510e5bf_5657
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR11_PROKKA|ECOR11_01328:-:ECOR11_01328|ECOR11_01328
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR14_PROKKA|ECOR14_01119:-:ECOR14_01119|ECOR14_01119
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR16_PROKKA|ECOR16_03463:-:ECOR16_03463|ECOR16_03463
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR23_PROKKA|ECOR23_01198:-:ECOR23_01198|ECOR23_01198
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR44_PROKKA|ECOR44_04874:-:ECOR44_04874|ECOR44_04874
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR48_PROKKA|ECOR48_01808:-:ECOR48_01808|ECOR48_01808
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR49_PROKKA|ECOR49_04197:-:ECOR49_04197|ECOR49_04197
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR4_PROKKA|ECOR4_03499:-:ECOR4_03499|ECOR4_03499
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR50_PROKKA|ECOR50_00890:-:ECOR50_00890|ECOR50_00890
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR51_PROKKA|ECOR51_01757:-:ECOR51_01757|ECOR51_01757
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR52_PROKKA|ECOR52_00091:-:ECOR52_00091|ECOR52_00091
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR53_PROKKA|ECOR53_01327:-:ECOR53_01327|ECOR53_01327
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  267     3e-72
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 267 bits (144),  Expect = 3e-72
+ Identities = 150/153 (98%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAGTGATGATGTAATAATGATGAGTTAA  153
+                ||||||| |||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR54_PROKKA|ECOR54_01583:-:ECOR54_01583|ECOR54_01583
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR55_PROKKA|ECOR55_01174:-:ECOR55_01174|ECOR55_01174
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR56_PROKKA|ECOR56_00082:-:ECOR56_00082|ECOR56_00082
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR60_PROKKA|ECOR60_02302:-:ECOR60_02302|ECOR60_02302
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  267     3e-72
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 267 bits (144),  Expect = 3e-72
+ Identities = 150/153 (98%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAGTGATGATGTAATAATGATGAGTTAA  153
+                ||||||| |||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR61_PROKKA|ECOR61_01546:-:ECOR61_01546|ECOR61_01546
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR62_PROKKA|ECOR62_02052:-:ECOR62_02052|ECOR62_02052
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR64_PROKKA|ECOR64_00093:-:ECOR64_00093|ECOR64_00093
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTTGATACATATTTTAATGTTATGAAAGTTAATTTAATT  120
+                ||||||||||||||||||||||| ||||||||||||||||||||| ||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR66_PROKKA|ECOR66_00098:-:ECOR66_00098|ECOR66_00098
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  267     3e-72
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 267 bits (144),  Expect = 3e-72
+ Identities = 150/153 (98%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||||||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR6_PROKKA|ECOR6_03195:-:ECOR6_03195|ECOR6_03195
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= ECOR8_PROKKA|ECOR8_04377:-:ECOR8_04377|ECOR8_04377
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE21|HKKLMMAK_01251:HKKLMMAK_01251:HKKLMMAK_01251|HKKLMMAK_01251
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE24|FLBELDDJ_03223:FLBELDDJ_03223:FLBELDDJ_03223|FLBELDDJ_03223
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  267     3e-72
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 267 bits (144),  Expect = 3e-72
+ Identities = 150/153 (98%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTATATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| |||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE25|NKLEEENC_03713:NKLEEENC_03713:NKLEEENC_03713|NKLEEENC_03713
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE26|AFHKKBMH_03298:AFHKKBMH_03298:AFHKKBMH_03298|AFHKKBMH_03298
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE4|NBLHDMPF_00842:NBLHDMPF_00842:NBLHDMPF_00842|NBLHDMPF_00842
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  267     3e-72
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 267 bits (144),  Expect = 3e-72
+ Identities = 150/153 (98%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAGTGATGATGTAATAATGATGAGTTAA  153
+                ||||||| |||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE40|EEHHMH_18300:EEHHMH_18300:EEHHMH_18300|EEHHMH_18300
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE41|PNKGMM_11190:PNKGMM_11190:PNKGMM_11190|PNKGMM_11190
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTTGATACATATTTTAATGTTATGAAAGTTAATTTAATT  120
+                ||||||||||||||||||||||| ||||||||||||||||||||| ||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE46|DADKIG_06545:DADKIG_06545:DADKIG_06545|DADKIG_06545
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE47|NHFOKF_18750:NHFOKF_18750:NHFOKF_18750|NHFOKF_18750
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE48_PROKKA|KE48_01479:-:KE48_01479|KE48_01479
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE50|OOFCCB_12330:OOFCCB_12330:OOFCCB_12330|OOFCCB_12330
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE51|BHDFJC_08045:BHDFJC_08045:BHDFJC_08045|BHDFJC_08045
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE54|NBPOCE_08770:NBPOCE_08770:NBPOCE_08770|NBPOCE_08770
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE55|HDLJKA_06375:HDLJKA_06375:HDLJKA_06375|HDLJKA_06375
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= KE58|FKGHDH_06525:FKGHDH_06525:FKGHDH_06525|FKGHDH_06525
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= LRPF007|PGOAJBJE_00149:PGOAJBJE_00149:PGOAJBJE_00149|PGOAJBJE_00149
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= LRPF62|CPONALDP_01537:CPONALDP_01537:CPONALDP_01537|CPONALDP_01537
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  261     1e-70
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 261 bits (141),  Expect = 1e-70
+ Identities = 149/153 (97%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAGAAGCGTCAGTGAATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                |||||||||||| ||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= UTI89|a370e86af943a50f23d4c066bcb16592_5435:IFE20_RS13385:IFE20_RS13
+385|a370e86af943a50f23d4c066bcb16592_5435
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  272     5e-74
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 272 bits (147),  Expect = 5e-74
+ Identities = 151/153 (99%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCCGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAGTTAA  153
+                |||||||||||||||||||||||||||| ||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+Query= W3110|a99aee7d8774ee1318b35b64abeb3eab_5223:Y75_RS13105:Y75_RS13105|
+a99aee7d8774ee1318b35b64abeb3eab_5223
+
+Length=153
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete g...  283     3e-77
+
+
+>NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete 
+genome
+Length=4641652
+
+ Score = 283 bits (153),  Expect = 3e-77
+ Identities = 153/153 (100%), Gaps = 0/153 (0%)
+ Strand=Plus/Minus
+
+Query  1        ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  60
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629272  ATGTCCCACGCTGTGGACGGTACTTACATTAAGGCACAACAGGACAAAATGGTCAATTCT  2629213
+
+Query  61       TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  120
+                ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  2629212  TCGTTATGTAAAAAAGCGTCAGTGGATACATATTTTAATGTTATGGAAGTTAATTTAATT  2629153
+
+Query  121      ATTTACAATGATGATGTAATAATGATGAATTAA  153
+                |||||||||||||||||||||||||||||||||
+Sbjct  2629152  ATTTACAATGATGATGTAATAATGATGAATTAA  2629120
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 617337056
+
+
+  Database: ./data/input/genome_fasta_files/MG1655.fasta
+    Posted date:  Jun 8, 2025  6:57 PM
+  Number of letters in database: 4,641,652
+  Number of sequences in database:  1
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

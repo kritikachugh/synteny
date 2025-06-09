@@ -1,0 +1,1050 @@
+BLASTN 2.16.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ./data/input/genome_fasta_files/ECOR4_PROKKA.fasta
+           105 sequences; 4,581,857 total letters
+
+
+
+Query= CFT073|2b84de5415a5ca9477dbe99a5510e5bf_86:fixB:HGG68_RS00210|2b84de
+5415a5ca9477dbe99a5510e5bf_86
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR11_PROKKA|ECOR11_02421:fixB:ECOR11_02421|ECOR11_02421
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     145     8e-35
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 145 bits (78),  Expect = 8e-35
+ Identities = 171/216 (79%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACTTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || ||| || || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGTTCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               || |||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR14_PROKKA|ECOR14_03608:fixB_2:ECOR14_03608|ECOR14_03608
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     156     4e-38
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 156 bits (84),  Expect = 4e-38
+ Identities = 173/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR16_PROKKA|ECOR16_02495:fixB_3:ECOR16_02495|ECOR16_02495
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR23_PROKKA|ECOR23_00082:-:ECOR23_00082|ECOR23_00082
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR44_PROKKA|ECOR44_03239:-:ECOR44_03239|ECOR44_03239
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR48_PROKKA|ECOR48_02693:-:ECOR48_02693|ECOR48_02693
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR49_PROKKA|ECOR49_04551:-:ECOR49_04551|ECOR49_04551
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR50_PROKKA|ECOR50_03183:-:ECOR50_03183|ECOR50_03183
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     150     2e-36
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 150 bits (81),  Expect = 2e-36
+ Identities = 172/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACTTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || ||| || || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR51_PROKKA|ECOR51_04842:-:ECOR51_04842|ECOR51_04842
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR52_PROKKA|ECOR52_00251:-:ECOR52_00251|ECOR52_00251
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR53_PROKKA|ECOR53_03079:-:ECOR53_03079|ECOR53_03079
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR54_PROKKA|ECOR54_00058:-:ECOR54_00058|ECOR54_00058
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR55_PROKKA|ECOR55_04725:-:ECOR55_04725|ECOR55_04725
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR56_PROKKA|ECOR56_04108:-:ECOR56_04108|ECOR56_04108
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR60_PROKKA|ECOR60_00991:-:ECOR60_00991|ECOR60_00991
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR61_PROKKA|ECOR61_02396:-:ECOR61_02396|ECOR61_02396
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR62_PROKKA|ECOR62_01669:-:ECOR62_01669|ECOR62_01669
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR64_PROKKA|ECOR64_03369:-:ECOR64_03369|ECOR64_03369
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR66_PROKKA|ECOR66_02368:-:ECOR66_02368|ECOR66_02368
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR6_PROKKA|ECOR6_02166:-:ECOR6_02166|ECOR6_02166
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     139     4e-33
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 139 bits (75),  Expect = 4e-33
+ Identities = 170/216 (79%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGTGCTAATGCATCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || |||||||| |  ||  |  ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAA--CGGCGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= ECOR8_PROKKA|ECOR8_02026:-:ECOR8_02026|ECOR8_02026
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     156     4e-38
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 156 bits (84),  Expect = 4e-38
+ Identities = 173/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE21|HKKLMMAK_03561:fixB_3:HKKLMMAK_03561|HKKLMMAK_03561
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE24|FLBELDDJ_00901:fixB_1:FLBELDDJ_00901|FLBELDDJ_00901
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE25|NKLEEENC_01271:fixB_1:NKLEEENC_01271|NKLEEENC_01271
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE26|AFHKKBMH_00694:fixB_1:AFHKKBMH_00694|AFHKKBMH_00694
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE4|NBLHDMPF_03675:fixB_3:NBLHDMPF_03675|NBLHDMPF_03675
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE40|EEHHMH_03520:fixB:EEHHMH_03520|EEHHMH_03520
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE41|PNKGMM_24420:fixB:PNKGMM_24420|PNKGMM_24420
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE46|DADKIG_19545:fixB:DADKIG_19545|DADKIG_19545
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     139     4e-33
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 139 bits (75),  Expect = 4e-33
+ Identities = 170/216 (79%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGTGCTAATGCATCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || |||||||| |  ||  |  ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAA--CGGCGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE47|NHFOKF_07845:fixB:NHFOKF_07845|NHFOKF_07845
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE48_PROKKA|KE48_03541:fixB_2:KE48_03541|KE48_03541
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE50|OOFCCB_01065:fixB:OOFCCB_01065|OOFCCB_01065
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE51|BHDFJC_22495:fixB:BHDFJC_22495|BHDFJC_22495
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE54|NBPOCE_21235:fixB:NBPOCE_21235|NBPOCE_21235
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE55|HDLJKA_19480:fixB:HDLJKA_19480|HDLJKA_19480
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= KE58|FKGHDH_19655:fixB:FKGHDH_19655|FKGHDH_19655
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     150     2e-36
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 150 bits (81),  Expect = 2e-36
+ Identities = 172/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACTTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || ||| || || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= LRPF007|PGOAJBJE_03978:fixB_3:PGOAJBJE_03978|PGOAJBJE_03978
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= LRPF62|CPONALDP_04164:fixB_3:CPONALDP_04164|CPONALDP_04164
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= MG1655|9d38f563c3a26fdef9221ebcd767f53a_90:fixB:b0042|9d38f563c3a26f
+def9221ebcd767f53a_90
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     156     4e-38
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 156 bits (84),  Expect = 4e-38
+ Identities = 173/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= UTI89|a370e86af943a50f23d4c066bcb16592_86:fixB:IFE20_RS00210|a370e86
+af943a50f23d4c066bcb16592_86
+
+Length=942
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+Query= W3110|a99aee7d8774ee1318b35b64abeb3eab_82:fixB:Y75_RS00220|a99aee7d8
+774ee1318b35b64abeb3eab_82
+
+Length=942
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOWP01000007.1                                                     156     4e-38
+
+
+>NZ_QOWP01000007.1
+Length=180378
+
+ Score = 156 bits (84),  Expect = 4e-38
+ Identities = 173/216 (80%), Gaps = 5/216 (2%)
+ Strand=Plus/Plus
+
+Query  671     AGTTGGCCTGTTCTCGTCCGGTGGCGGAAAACGAAAAATGGATGGAGCACGAACGCTATG  730
+               ||| || |||||| |||||  | || |||  ||| || ||||||||||  ||||| ||| 
+Sbjct  137125  AGTCGG-CTGTTCACGTCCAATTGCCGAAGGCGAGAACTGGATGGAGCGTGAACGTTATA  137183
+
+Query  731     TCGGTATCTCCAACCTGATGCTGAAACCTGAACTGTACCTGGCGGTGGGGATCTCCGGGC  790
+               ||||| |||||  | || |||||||| | || || |||||| || |||||||||||||||
+Sbjct  137184  TCGGTGTCTCCGGCGTGTTGCTGAAATCCGATCTCTACCTGACGCTGGGGATCTCCGGGC  137243
+
+Query  791     AGATCCAGCACATGGTTGGCGCTAACGCGTCGC-AAA-CCATTTTCGCCATCAATAAAGA  848
+               ||||||| || ||||||||||  |||| | ||| |||   ||| ||||||||||||||||
+Sbjct  137244  AGATCCAACATATGGTTGGCGGCAACG-G-CGCAAAAGTGATTGTCGCCATCAATAAAGA  137301
+
+Query  849     TAAAAATGCGCCGATCTTCCAGTACGCGGATTACGG  884
+               |||||||||||| |||||| | || || || |||||
+Sbjct  137302  TAAAAATGCGCCAATCTTCAACTATGCCGACTACGG  137337
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4208507198
+
+
+  Database: ./data/input/genome_fasta_files/ECOR4_PROKKA.fasta
+    Posted date:  Jun 8, 2025  7:03 PM
+  Number of letters in database: 4,581,857
+  Number of sequences in database:  105
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

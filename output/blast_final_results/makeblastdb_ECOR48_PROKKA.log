@@ -1,0 +1,12 @@
+
+
+Building a new DB, current time: 06/08/2025 19:04:41
+New DB name:   C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR48_PROKKA
+New DB title:  ./data/input/genome_fasta_files/ECOR48_PROKKA.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 99 sequences in 0.0313824 seconds.
+
+
+BLAST Database error: Database memory map file error

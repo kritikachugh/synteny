@@ -1,0 +1,1980 @@
+BLASTN 2.16.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ./data/input/genome_fasta_files/ECOR47_PROKKA.fasta
+           66 sequences; 4,917,075 total letters
+
+
+
+Query= CFT073|2b84de5415a5ca9477dbe99a5510e5bf_4167:cspE:HGG68_RS10210|2b84
+de5415a5ca9477dbe99a5510e5bf_4167
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR11_PROKKA|ECOR11_04860:cspC:ECOR11_04860|ECOR11_04860
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR14_PROKKA|ECOR14_00202:cspC:ECOR14_00202|ECOR14_00202
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR23_PROKKA|ECOR23_02242:-:ECOR23_02242|ECOR23_02242
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR44_PROKKA|ECOR44_02640:-:ECOR44_02640|ECOR44_02640
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+NZ_QOYG01000020.1                                                     104     3e-23 
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCTGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+>NZ_QOYG01000020.1
+Length=71466
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 101/123 (82%), Gaps = 2/123 (2%)
+ Strand=Plus/Minus
+
+Query  28     TGGTTCAACG-AGTCTAAAGGTTTTGGCTTCATTACTCCGGCTGATGGCAGCAAAGACGT  86
+              ||||||||||  | | ||||| || |||||||| ||||| |  ||||||   ||||||||
+Sbjct  59814  TGGTTCAACGCTGAC-AAAGGCTTCGGCTTCATCACTCCTGACGATGGCTCTAAAGACGT  59756
+
+Query  87     GTTCGTACACTTCTCTGCTATCCAGGGTAATGGTTTCAAAACTCTGGCTGAAGGTCAGAA  146
+              |||||||||||||||||||||||||    |||||| |||| ||||||  |||||||||||
+Sbjct  59755  GTTCGTACACTTCTCTGCTATCCAGAACGATGGTTACAAATCTCTGGACGAAGGTCAGAA  59696
+
+Query  147    CGT  149
+               ||
+Sbjct  59695  AGT  59693
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR48_PROKKA|ECOR48_01122:-:ECOR48_01122|ECOR48_01122
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+NZ_QOYG01000020.1                                                     104     3e-23 
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCTGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+>NZ_QOYG01000020.1
+Length=71466
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 101/123 (82%), Gaps = 2/123 (2%)
+ Strand=Plus/Minus
+
+Query  28     TGGTTCAACG-AGTCTAAAGGTTTTGGCTTCATTACTCCGGCTGATGGCAGCAAAGACGT  86
+              ||||||||||  | | ||||| || |||||||| ||||| |  ||||||   ||||||||
+Sbjct  59814  TGGTTCAACGCTGAC-AAAGGCTTCGGCTTCATCACTCCTGACGATGGCTCTAAAGACGT  59756
+
+Query  87     GTTCGTACACTTCTCTGCTATCCAGGGTAATGGTTTCAAAACTCTGGCTGAAGGTCAGAA  146
+              |||||||||||||||||||||||||    |||||| |||| ||||||  |||||||||||
+Sbjct  59755  GTTCGTACACTTCTCTGCTATCCAGAACGATGGTTACAAATCTCTGGACGAAGGTCAGAA  59696
+
+Query  147    CGT  149
+               ||
+Sbjct  59695  AGT  59693
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR49_PROKKA|ECOR49_00772:-:ECOR49_00772|ECOR49_00772
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+NZ_QOYG01000020.1                                                     104     3e-23 
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCTGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+>NZ_QOYG01000020.1
+Length=71466
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 101/123 (82%), Gaps = 2/123 (2%)
+ Strand=Plus/Minus
+
+Query  28     TGGTTCAACG-AGTCTAAAGGTTTTGGCTTCATTACTCCGGCTGATGGCAGCAAAGACGT  86
+              ||||||||||  | | ||||| || |||||||| ||||| |  ||||||   ||||||||
+Sbjct  59814  TGGTTCAACGCTGAC-AAAGGCTTCGGCTTCATCACTCCTGACGATGGCTCTAAAGACGT  59756
+
+Query  87     GTTCGTACACTTCTCTGCTATCCAGGGTAATGGTTTCAAAACTCTGGCTGAAGGTCAGAA  146
+              |||||||||||||||||||||||||    |||||| |||| ||||||  |||||||||||
+Sbjct  59755  GTTCGTACACTTCTCTGCTATCCAGAACGATGGTTACAAATCTCTGGACGAAGGTCAGAA  59696
+
+Query  147    CGT  149
+               ||
+Sbjct  59695  AGT  59693
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR4_PROKKA|ECOR4_03133:-:ECOR4_03133|ECOR4_03133
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR50_PROKKA|ECOR50_01408:-:ECOR50_01408|ECOR50_01408
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+NZ_QOYG01000020.1                                                     104     3e-23 
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCTGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+>NZ_QOYG01000020.1
+Length=71466
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 101/123 (82%), Gaps = 2/123 (2%)
+ Strand=Plus/Minus
+
+Query  28     TGGTTCAACG-AGTCTAAAGGTTTTGGCTTCATTACTCCGGCTGATGGCAGCAAAGACGT  86
+              ||||||||||  | | ||||| || |||||||| ||||| |  ||||||   ||||||||
+Sbjct  59814  TGGTTCAACGCTGAC-AAAGGCTTCGGCTTCATCACTCCTGACGATGGCTCTAAAGACGT  59756
+
+Query  87     GTTCGTACACTTCTCTGCTATCCAGGGTAATGGTTTCAAAACTCTGGCTGAAGGTCAGAA  146
+              |||||||||||||||||||||||||    |||||| |||| ||||||  |||||||||||
+Sbjct  59755  GTTCGTACACTTCTCTGCTATCCAGAACGATGGTTACAAATCTCTGGACGAAGGTCAGAA  59696
+
+Query  147    CGT  149
+               ||
+Sbjct  59695  AGT  59693
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR51_PROKKA|ECOR51_02495:-:ECOR51_02495|ECOR51_02495
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR52_PROKKA|ECOR52_01341:-:ECOR52_01341|ECOR52_01341
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR53_PROKKA|ECOR53_02532:-:ECOR53_02532|ECOR53_02532
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR54_PROKKA|ECOR54_02245:-:ECOR54_02245|ECOR54_02245
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR55_PROKKA|ECOR55_03792:-:ECOR55_03792|ECOR55_03792
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR56_PROKKA|ECOR56_03398:-:ECOR56_03398|ECOR56_03398
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR60_PROKKA|ECOR60_03405:-:ECOR60_03405|ECOR60_03405
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR61_PROKKA|ECOR61_01057:-:ECOR61_01057|ECOR61_01057
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR62_PROKKA|ECOR62_02996:-:ECOR62_02996|ECOR62_02996
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR64_PROKKA|ECOR64_01776:-:ECOR64_01776|ECOR64_01776
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR66_PROKKA|ECOR66_03507:-:ECOR66_03507|ECOR66_03507
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR6_PROKKA|ECOR6_02672:-:ECOR6_02672|ECOR6_02672
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= ECOR8_PROKKA|ECOR8_01267:-:ECOR8_01267|ECOR8_01267
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE21|HKKLMMAK_00480:cspC:HKKLMMAK_00480|HKKLMMAK_00480
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE24|FLBELDDJ_03921:cspC:FLBELDDJ_03921|FLBELDDJ_03921
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE25|NKLEEENC_04923:cspC:NKLEEENC_04923|NKLEEENC_04923
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE26|AFHKKBMH_02534:cspC:AFHKKBMH_02534|AFHKKBMH_02534
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE4|NBLHDMPF_01670:cspC:NBLHDMPF_01670|NBLHDMPF_01670
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE40|EEHHMH_14235:cspE:EEHHMH_14235|EEHHMH_14235
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     388     8e-109
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 388 bits (210),  Expect = 8e-109
+ Identities = 210/210 (100%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE41|PNKGMM_14900:cspE:PNKGMM_14900|PNKGMM_14900
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE46|DADKIG_10025:cspE:DADKIG_10025|DADKIG_10025
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE47|NHFOKF_22320:cspE:NHFOKF_22320|NHFOKF_22320
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     388     8e-109
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 388 bits (210),  Expect = 8e-109
+ Identities = 210/210 (100%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE48_PROKKA|KE48_04008:cspC:KE48_04008|KE48_04008
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE50|OOFCCB_16675:cspE:OOFCCB_16675|OOFCCB_16675
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE51|BHDFJC_15820:cspE:BHDFJC_15820|BHDFJC_15820
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     383     4e-107
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 383 bits (207),  Expect = 4e-107
+ Identities = 209/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE54|NBPOCE_04475:cspE:NBPOCE_04475|NBPOCE_04475
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE55|HDLJKA_10125:cspE:HDLJKA_10125|HDLJKA_10125
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+NZ_QOYG01000020.1                                                     104     3e-23 
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCTGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+>NZ_QOYG01000020.1
+Length=71466
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 101/123 (82%), Gaps = 2/123 (2%)
+ Strand=Plus/Minus
+
+Query  28     TGGTTCAACG-AGTCTAAAGGTTTTGGCTTCATTACTCCGGCTGATGGCAGCAAAGACGT  86
+              ||||||||||  | | ||||| || |||||||| ||||| |  ||||||   ||||||||
+Sbjct  59814  TGGTTCAACGCTGAC-AAAGGCTTCGGCTTCATCACTCCTGACGATGGCTCTAAAGACGT  59756
+
+Query  87     GTTCGTACACTTCTCTGCTATCCAGGGTAATGGTTTCAAAACTCTGGCTGAAGGTCAGAA  146
+              |||||||||||||||||||||||||    |||||| |||| ||||||  |||||||||||
+Sbjct  59755  GTTCGTACACTTCTCTGCTATCCAGAACGATGGTTACAAATCTCTGGACGAAGGTCAGAA  59696
+
+Query  147    CGT  149
+               ||
+Sbjct  59695  AGT  59693
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= KE58|FKGHDH_10330:cspE:FKGHDH_10330|FKGHDH_10330
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= LRPF007|PGOAJBJE_02052:cspC:PGOAJBJE_02052|PGOAJBJE_02052
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= LRPF62|CPONALDP_02393:cspC:CPONALDP_02393|CPONALDP_02393
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= MG1655|9d38f563c3a26fdef9221ebcd767f53a_3924:cspC:b1823|9d38f563c3a2
+6fdef9221ebcd767f53a_3924
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= UTI89|a370e86af943a50f23d4c066bcb16592_3883:cspE:IFE20_RS09550|a370e
+86af943a50f23d4c066bcb16592_3883
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGT  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||| 
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+Query= W3110|a99aee7d8774ee1318b35b64abeb3eab_3823:cspE:Y75_RS09605|a99aee7
+d8774ee1318b35b64abeb3eab_3823
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000001.1                                                     377     2e-105
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 377 bits (204),  Expect = 2e-105
+ Identities = 208/210 (99%), Gaps = 0/210 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  324788  ATGGCAAAGATTAAAGGTCAGGTTAAGTGGTTCAACGAGTCTAAAGGTTTTGGCTTCATT  324729
+
+Query  61      ACTCCGGCTGATGGCAGCAAAGATGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  324728  ACTCCGGCTGATGGCAGCAAAGACGTGTTCGTACACTTCTCCGCTATCCAGGGTAATGGC  324669
+
+Query  121     TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGCCAGAAAGGT  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  324668  TTCAAAACTCTGGCTGAAGGTCAGAACGTTGAGTTCGAAATTCAGGACGGTCAGAAAGGT  324609
+
+Query  181     CCGGCAGCTGTTAACGTAACAGCTATCTGA  210
+               ||||||||||||||||||||||||||||||
+Sbjct  324608  CCGGCAGCTGTTAACGTAACAGCTATCTGA  324579
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 929065221
+
+
+  Database: ./data/input/genome_fasta_files/ECOR47_PROKKA.fasta
+    Posted date:  Jun 8, 2025  7:03 PM
+  Number of letters in database: 4,917,075
+  Number of sequences in database:  66
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

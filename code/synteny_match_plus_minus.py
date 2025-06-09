@@ -1,384 +1,305 @@
-# synteny_match_plus_minus.py
+#!/usr/bin/env python3
 import pandas as pd
 import os
 import csv
 import argparse
-import re
 
-def parse_gff_to_df(gff_file_path):
-    """Parse GFF file into DataFrame using only existing IDs."""
-    features = []
-    try:
-        with open(gff_file_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                if line.startswith('#'):
-                    continue
-                fields = line.strip().split('\t')
-                if len(fields) >= 9:
-                    seqid, source, ftype, start, end, score, strand, phase, attributes = fields[:9]
-                    attr_dict = {}
-                    for attr_pair in attributes.split(';'):
-                        if '=' in attr_pair:
-                            key, value = attr_pair.split('=', 1)
-                            attr_dict[key] = value.strip().strip('"')
-                    
-                    # Use only existing IDs or locus_tags
-                    feature_id = None
-                    if 'locus_tag' in attr_dict:
-                        feature_id = attr_dict['locus_tag']
-                    elif 'ID' in attr_dict:
-                        feature_id = attr_dict['ID']
-                    
-                    feature = {
-                        'seqid': seqid,
-                        'source': source,
-                        'type': ftype,
-                        'start': int(start),
-                        'end': int(end),
-                        'score': score,
-                        'strand': strand,
-                        'phase': phase,
-                        'ID': feature_id,
-                        **attr_dict
-                    }
-                    features.append(feature)
-                    
-    except FileNotFoundError:
-        print(f"Error: GFF file not found: {gff_file_path}")
-        return pd.DataFrame()
-    except Exception as e:
-        print(f"Error parsing GFF file {gff_file_path}: {e}")
-        return pd.DataFrame()
-        
-    df = pd.DataFrame(features)
-    
-    # Clean up ID column
-    if 'ID' not in df.columns and 'locus_tag' in df.columns:
-        df['ID'] = df['locus_tag']
-    
-    return df
+# This list is considered static based on the dataset's structure.
+# If it needs to be dynamic, it would have to be derived from the input CSV.
+strain_columns = ["CFT073","ECOR11_PROKKA","ECOR14_PROKKA","ECOR16_PROKKA","ECOR23_PROKKA","ECOR44_PROKKA","ECOR47_PROKKA","ECOR48_PROKKA","ECOR49_PROKKA","ECOR4_PROKKA","ECOR50_PROKKA","ECOR51_PROKKA","ECOR52_PROKKA","ECOR53_PROKKA","ECOR54_PROKKA","ECOR55_PROKKA","ECOR56_PROKKA","ECOR60_PROKKA","ECOR61_PROKKA","ECOR62_PROKKA","ECOR64_PROKKA","ECOR66_PROKKA","ECOR6_PROKKA","ECOR8_PROKKA","KE21","KE24","KE25","KE26","KE4","KE40","KE41","KE46","KE47","KE48_PROKKA","KE50","KE51","KE54","KE55","KE58","LRPF007","LRPF62","MG1655","UTI89","W3110"]
 
-def extract_syntenic_region_around_anchor(anchor_id, gff_df_of_target_strain, target_strain_name, neighbors_to_extract=9):
-    """Extract syntenic region around an anchor gene using ID/locus_tag matching."""
-    if gff_df_of_target_strain.empty:
-        return None
+def parse_gff_to_df(gff_file):
+  """
+  Parses a GFF file and returns a pandas DataFrame of features.
+  """
+  features = []
+  with open(gff_file, 'r') as f:
+    for line in f:
+      if line.startswith('#'):
+        continue
+      fields = line.strip().split('\t')
+      if len(fields) >= 9:
+        seqid, source, ftype, start, end, score, strand, phase, attributes = fields[:9]
+        attr_dict = {}
+        for attr in attributes.split(';'):
+          if '=' in attr:
+            key, value = attr.split('=', 1) # Split only on the first '='
+            attr_dict[key] = value
 
-    # Clean string columns
-    for col in ['ID', 'locus_tag']:
-        if col in gff_df_of_target_strain.columns:
-            gff_df_of_target_strain[col] = gff_df_of_target_strain[col].astype(str).str.strip('"').str.strip()
+        feature = {
+            'seqid': seqid,
+            'source': source,
+            'type': ftype,
+            'start': int(start),
+            'end': int(end),
+            'score': score,
+            'strand': strand,
+            'phase': phase,
+            **attr_dict
+        }
+        features.append(feature)
+  return pd.DataFrame(features)
 
-    # Search by ID or locus_tag
-    anchor_matches = gff_df_of_target_strain[
-        (gff_df_of_target_strain['ID'].fillna('') == str(anchor_id)) |
-        (gff_df_of_target_strain['locus_tag'].fillna('') == str(anchor_id))
-    ]
 
-    anchor_cds_index = -1
-    if not anchor_matches.empty:
-        for index, row in anchor_matches.iterrows():
-            if row['type'] == 'CDS':
-                anchor_cds_index = index
-                break
-    
-    if anchor_cds_index == -1:
-        return None
+def extract_data_upstream_downstream(gene, gff_df, strain, neighbors_count=5):
+    # Sanitize columns to remove extra spaces and quotes
+    for col in ['ID', 'locus_tag', 'gene']:
+        if col in gff_df.columns:
+            gff_df[col] = gff_df[col].astype(str).str.strip('"').str.strip()
 
-    # Upstream genes
-    upstream_genes_list = []
-    current_idx = anchor_cds_index - 1
-    while len(upstream_genes_list) < neighbors_to_extract and current_idx >= 0:
-        if current_idx < len(gff_df_of_target_strain) and gff_df_of_target_strain.iloc[current_idx].get('type') == 'CDS': #
-            upstream_genes_list.append(gff_df_of_target_strain.iloc[current_idx])
-        current_idx -= 1
-    upstream_df = pd.DataFrame(upstream_genes_list[::-1]) # [cite: 80]
-
-    # Downstream genes
-    downstream_genes_list = []
-    current_idx = anchor_cds_index + 1
-    while len(downstream_genes_list) < neighbors_to_extract and current_idx < len(gff_df_of_target_strain):
-        if gff_df_of_target_strain.iloc[current_idx].get('type') == 'CDS': # [cite: 80]
-            downstream_genes_list.append(gff_df_of_target_strain.iloc[current_idx])
-        current_idx += 1
-    downstream_df = pd.DataFrame(downstream_genes_list) # [cite: 80]
-    
-    # Self (anchor) gene - now uses the definitive 'ID' column
-    self_anchor_cols = ['ID', 'type', 'gene', 'start', 'end', 'strand']  # Uses 'IDref_pos' directly
-    self_anchor_series_data = {}
-    for col_loop_var_anchor in self_anchor_cols: 
-        self_anchor_series_data[col_loop_var_anchor] = gff_df_of_target_strain.loc[anchor_cds_index, col_loop_var_anchor] if col_loop_var_anchor in gff_df_of_target_strain.columns else None
-    self_anchor_df = pd.DataFrame([self_anchor_series_data]) # [cite: 81]
-    # No rename of 'Processed_ID' to 'ID' needed here as 'ID' is directly used
-    self_anchor_df['position'] = 0 # [cite: 81]
-
-    # Add position; 'ID' column is inherited correctly, no rename needed
-    if not upstream_df.empty:
-        upstream_df['position'] = range(-len(upstream_df), 0) # [cite: 81]
-    if not downstream_df.empty:
-        downstream_df['position'] = range(1, len(downstream_df) + 1) # [cite: 82]
-    
-    extracted_block_df = pd.concat([upstream_df, self_anchor_df, downstream_df], ignore_index=True) # [cite: 82]
-    
-    output_cols = ['position', 'gene', 'ID', 'type', 'start', 'end', 'strand'] # [cite: 82]
-    for col_loop_var_output in output_cols: 
-        if col_loop_var_output not in extracted_block_df.columns: extracted_block_df[col_loop_var_output] = pd.NA # [cite: 82]
-            
-    extracted_block_df['ID'] = extracted_block_df['ID'].fillna('Missing_GFF_ID') # [cite: 82]
-    extracted_block_df['gene'] = extracted_block_df['gene'].fillna('Missing_GeneName') # [cite: 82]
-    extracted_block_df = extracted_block_df[output_cols] # [cite: 83]
-    extracted_block_df['strain'] = target_strain_name # [cite: 83]
-    return extracted_block_df
-
-def get_gene_sets_from_context(context_df, gene_col='gene', pos_col='position'): # [cite: 83]
-    upstream_set = set()
-    downstream_set = set()
-    if context_df is None or context_df.empty or gene_col not in context_df.columns or pos_col not in context_df.columns: # [cite: 83]
-        return upstream_set, downstream_set
-    
-    for _, row in context_df.iterrows():
-        gene_name = row.get(gene_col) # [cite: 83]
-        position_val = row.get(pos_col) # [cite: 83]
-        if pd.notna(gene_name) and isinstance(gene_name, str) and pd.notna(position_val): # [cite: 84]
-            if position_val < 0: upstream_set.add(gene_name) # [cite: 84]
-            elif position_val > 0: downstream_set.add(gene_name) # [cite: 84]
-    return upstream_set, downstream_set
-
-def get_anchor_gene_name(reference_context_df, target_position, gene_col='gene', pos_col='position'): # [cite: 84]
-    if reference_context_df is None or reference_context_df.empty or \
-       pos_col not in reference_context_df.columns or gene_col not in reference_context_df.columns: # [cite: 84]
-        return None
-    target_row = reference_context_df[reference_context_df[pos_col] == target_position] # [cite: 84]
-    if target_row.empty: return None # [cite: 84]
-    gene_name = target_row[gene_col].iloc[0] # [cite: 85]
-    return gene_name if pd.notna(gene_name) and isinstance(gene_name, str) and gene_name.strip() != '' else None # [cite: 85]
-
-def get_gene_at_position(df, position):
-    """Get gene name at a specific position in the DataFrame."""
-    if df.loc[df['position'] == position].empty:
-        return None
-    gene = df.loc[df['position'] == position, 'gene'].fillna('').iloc[0]
-    if not isinstance(gene, str) or gene.strip() == '':
-        return None
-    return gene
-
-def get_upstream_downstream_set(df, column_name='position'):
-    """Extract sets of upstream and downstream genes."""
-    upstream_genes = set()
-    downstream_genes = set()
-    
-    for _, row in df.iterrows():
-        if row[column_name] < 0:
-            upstream_genes.add(row['gene'])
-        elif row[column_name] > 0:
-            downstream_genes.add(row['gene'])
-    return upstream_genes, downstream_genes
-
-def check_matches(upstream_genes, downstream_genes, negative_genes, positive_genes):
-    """Check matches between gene sets and determine orientation."""
-    downstream_matches = 0
-    upstream_matches = 0
-
-    neg_downstream_match_count = len(negative_genes.intersection(downstream_genes))
-    neg_upstream_match_count = len(negative_genes.intersection(upstream_genes))
-    pos_downstream_match_count = len(positive_genes.intersection(downstream_genes))
-    pos_upstream_match_count = len(positive_genes.intersection(upstream_genes))
-
-    if neg_downstream_match_count > pos_downstream_match_count:
-        downstream_matches = neg_downstream_match_count
-        downstream_winner = "negative"
-    else:
-        downstream_matches = pos_downstream_match_count
-        downstream_winner = "positive"
-    
-    if neg_upstream_match_count > pos_upstream_match_count:
-        upstream_matches = neg_upstream_match_count
-        upstream_winner = "negative"
-    else:
-        upstream_matches = pos_upstream_match_count
-        upstream_winner = "positive"
-        
-    return upstream_matches, downstream_matches, upstream_winner, downstream_winner
-
-def extract_data_upstream_downstream(gene, gff_df, strain, neighbors_count=9):
-    """Extract upstream and downstream genes around a given gene."""
-    if 'ID' in gff_df.columns:
-        gff_df['ID'] = gff_df['ID'].str.strip('"').str.strip()
-    if 'locus_tag' in gff_df.columns:
-        gff_df['locus_tag'] = gff_df['locus_tag'].str.strip('"').str.strip()
-    if 'gene' in gff_df.columns:
-        gff_df['gene'] = gff_df['gene'].str.strip('"').str.strip()
-
+    # Merge 'locus_tag' into 'ID'
     if 'locus_tag' in gff_df.columns:
         gff_df['ID'] = gff_df['ID'].fillna(gff_df['locus_tag'])
 
-    gene_matches = gff_df[gff_df['gene'].fillna('').str.contains(str(gene), na=False, case=False)]
+    # Find the index of the target gene
+    gene_matches = gff_df[gff_df['gene'].fillna('').str.fullmatch(gene, case=False)]
+
+    if gene_matches.empty:
+        # Fallback to partial match if full match fails
+        gene_matches = gff_df[gff_df['gene'].fillna('').str.contains(gene, na=False, case=False)]
 
     if not gene_matches.empty:
-        target_index = gene_matches.index[0]
+        target_index = -1
+        # Prioritize CDS type features
         for index, row in gene_matches.iterrows():
             if row['type'] == 'CDS':
                 target_index = index
                 break
+        if target_index == -1:
+            target_index = gene_matches.index[0]
 
-        # Extract upstream genes
+        # --- Upstream genes ---
         upstream_genes = []
-        current_idx = target_index - 1
-        while len(upstream_genes) < neighbors_count and current_idx >= 0:
-            if gff_df.iloc[current_idx]['type'] == 'CDS':
-                upstream_genes.append(gff_df.iloc[current_idx])
-            current_idx -= 1
-        upstream_df = pd.DataFrame(upstream_genes[::-1])
-        if not upstream_df.empty:
+        upstream_genes_index = target_index - 1
+        while len(upstream_genes) < neighbors_count and upstream_genes_index >= 0:
+            if gff_df.iloc[upstream_genes_index]['type'] == 'CDS':
+                upstream_genes.append(gff_df.iloc[upstream_genes_index])
+            upstream_genes_index -= 1
+        
+        # Positions are relative to the *found* gene, so from -1 to -neighbors_count
+        if upstream_genes:
+            upstream_df = pd.DataFrame(upstream_genes[::-1]) # Farthest is first
             upstream_df['position'] = range(-len(upstream_df), 0)
+        else:
+            upstream_df = pd.DataFrame()
 
-        # Extract downstream genes
+
+        # --- Downstream genes ---
         downstream_genes = []
-        current_idx = target_index + 1
-        while len(downstream_genes) < neighbors_count and current_idx < len(gff_df):
-            if gff_df.iloc[current_idx]['type'] == 'CDS':
-                downstream_genes.append(gff_df.iloc[current_idx])
-            current_idx += 1
-        downstream_df = pd.DataFrame(downstream_genes)
-        if not downstream_df.empty:
-            downstream_df['position'] = range(1, len(downstream_genes) + 1)
+        downstream_genes_index = target_index + 1
+        while len(downstream_genes) < neighbors_count and downstream_genes_index < len(gff_df):
+            if gff_df.iloc[downstream_genes_index]['type'] == 'CDS':
+                downstream_genes.append(gff_df.iloc[downstream_genes_index])
+            downstream_genes_index += 1
+        
+        if downstream_genes:
+            downstream_df = pd.DataFrame(downstream_genes)
+            # Positions are relative to the *found* gene, from 2 to neighbors_count+1
+            downstream_df['position'] = range(2, len(downstream_df) + 2)
+        else:
+            downstream_df = pd.DataFrame()
 
-        # Process self gene
-        self_gene = gff_df.iloc[target_index][['ID', 'type', 'gene', 'start', 'end', 'strand']].copy()
-        self_gene['position'] = 0
-        self_gene_df = pd.DataFrame([self_gene])
 
-        # Combine all genes
-        combined_genes = pd.concat([upstream_df, self_gene_df, downstream_df], ignore_index=True)
+        # Extract the target gene (self gene)
+        self_gene = pd.DataFrame([gff_df.loc[target_index]])
+        self_gene['position'] = 1 # Position of the found gene is always 1
+
+        combined_genes = pd.concat([upstream_df, self_gene, downstream_df], ignore_index=True)
         combined_genes['ID'] = combined_genes['ID'].fillna('Missing_ID')
+        
+        # Ensure all necessary columns exist, fill with None if not
+        for col in ['gene', 'type', 'start', 'end', 'strand']:
+            if col not in combined_genes.columns:
+                combined_genes[col] = None
+
         combined_genes = combined_genes[['position', 'gene', 'ID', 'type', 'start', 'end', 'strand']]
         combined_genes['strain'] = strain
 
         return combined_genes
-    return None
-
-def main():
-    parser = argparse.ArgumentParser(description="Finds syntenic regions for soft-core genes reported as missing in some strains.") # [cite: 85]
-    parser.add_argument('--input_context_csv', required=True, help="Input data_upstream_downstream.csv from script 1.") # [cite: 85]
-    parser.add_argument('--gff_dir', required=True, help="Directory containing GFF files for all strains.") # [cite: 85]
-    parser.add_argument('--output_compare_csv', default='compare_genes.csv', help="Output CSV for syntenic regions found (default: compare_genes.csv).") # [cite: 85]
-    parser.add_argument('--match_threshold', type=int, default=2, help="Minimum number of matching genes for synteny (default: 2).") #
-    args = parser.parse_args()
-
-    try:
-        df_contexts = pd.read_csv(args.input_context_csv) # [cite: 86]
-        if df_contexts.empty: # [cite: 86]
-            print(f"Warning: Input context file '{args.input_context_csv}' is empty. Outputs will be empty.") #
-            pd.DataFrame(columns=['position', 'gene', 'ID', 'type', 'start', 'end', 'strand', 'strain', 'central_gene']).to_csv(args.output_compare_csv, index=False) # [cite: 87]
-            return
-    except FileNotFoundError:
-        print(f"Error: Input context file '{args.input_context_csv}' not found.") # [cite: 87]
-        return
-    except Exception as e:
-        print(f"Error reading {args.input_context_csv}: {e}") #
-        return
-
-    hardcoded_strain_list = ["CFT073","ECOR11_PROKKA","ECOR14_PROKKA","ECOR16_PROKKA","ECOR23_PROKKA","ECOR44_PROKKA","ECOR47_PROKKA","ECOR48_PROKKA","ECOR49_PROKKA","ECOR4_PROKKA","ECOR50_PROKKA","ECOR51_PROKKA","ECOR52_PROKKA","ECOR53_PROKKA","ECOR54_PROKKA","ECOR55_PROKKA","ECOR56_PROKKA","ECOR60_PROKKA","ECOR61_PROKKA","ECOR62_PROKKA","ECOR64_PROKKA","ECOR66_PROKKA","ECOR6_PROKKA","ECOR8_PROKKA","KE21","KE24","KE25","KE26","KE4","KE40","KE41","KE46","KE47","KE48_PROKKA","KE50","KE51","KE54","KE55","KE58","LRPF007","LRPF62","MG1655","UTI89","W3110"] # [cite: 88]
-    all_possible_strains = set(hardcoded_strain_list) # [cite: 88]
-    if 'strain' in df_contexts.columns: # [cite: 88]
-        all_possible_strains.update(df_contexts['strain'].unique()) # [cite: 88]
-
-    missing_strains_map = {} # [cite: 88]
-    if 'central_gene' in df_contexts.columns and 'strain' in df_contexts.columns: # [cite: 88]
-        for central_gene_name, group_data in df_contexts.groupby('central_gene'): # [cite: 88]
-            present_strains_for_gene = set(group_data['strain'].unique()) # [cite: 88]
-            missing_strains_map[central_gene_name] = list(all_possible_strains - present_strains_for_gene) # [cite: 88]
     else:
-        print("Error: 'central_gene' or 'strain' columns not found in input context CSV. Cannot proceed.") #
-        return
+        # To avoid clutter, we can comment this out or use a logging library
+        # print(f"Warning: Gene '{gene}' not found for strain '{strain}'.")
+        return None
 
-    gff_data_cache = {} # [cite: 90]
-    print("Pre-loading GFF files for synteny matching...") # [cite: 90]
-    strains_needing_gff = set(ms for cg_miss_list in missing_strains_map.values() for ms in cg_miss_list if isinstance(cg_miss_list, list)) # [cite: 90]
-    for strain_name_iter in strains_needing_gff: # [cite: 90]
-        gff_file_path = os.path.join(args.gff_dir, f"{strain_name_iter}.gff") # [cite: 90]
-        if os.path.exists(gff_file_path) and strain_name_iter not in gff_data_cache: # [cite: 90]
-            parsed_gff = parse_gff_to_df(gff_file_path) # [cite: 90]
-            if not parsed_gff.empty: # [cite: 91]
-                gff_data_cache[strain_name_iter] = parsed_gff # [cite: 91]
-    print(f"Finished pre-loading {len(gff_data_cache)} GFF files.") # [cite: 91]
+def get_upstream_downstream_set(df, column_name):
+  upstream_genes = set(df[df[column_name] < 0]['gene'].dropna())
+  downstream_genes = set(df[df[column_name] > 0]['gene'].dropna())
+  return upstream_genes, downstream_genes
 
-    output_compare_cols = ['position', 'gene', 'ID', 'type', 'start', 'end', 'strand', 'strain', 'central_gene'] # [cite: 91]
+def check_matches(upstream_genes, downstream_genes, negative_genes, positive_genes):
+  neg_downstream_match_count = len(negative_genes.intersection(downstream_genes))
+  pos_downstream_match_count = len(positive_genes.intersection(downstream_genes))
+  
+  downstream_matches = max(neg_downstream_match_count, pos_downstream_match_count)
+  
+  neg_upstream_match_count = len(negative_genes.intersection(upstream_genes))
+  pos_upstream_match_count = len(positive_genes.intersection(upstream_genes))
 
-    synteny_found_records_dfs = [] # [cite: 91]
-    synteny_block_written_for_pair = set()  # [cite: 91]
+  upstream_matches = max(neg_upstream_match_count, pos_upstream_match_count)
 
-    if 'central_gene' in df_contexts.columns and 'strain' in df_contexts.columns: # [cite: 91]
-        for (ref_roary_gene, ref_strain), reference_context_df in df_contexts.groupby(['central_gene', 'strain']): # [cite: 91]
-            ref_upstream_set, ref_downstream_set = get_gene_sets_from_context(reference_context_df) # [cite: 92]
-            strains_where_ref_roary_gene_is_missing = missing_strains_map.get(ref_roary_gene, []) # [cite: 92]
+  return upstream_matches, downstream_matches
 
-            for missing_strain_name in strains_where_ref_roary_gene_is_missing: # [cite: 92]
-                if missing_strain_name not in gff_data_cache: # [cite: 92]
-                    continue
-                gff_df_for_missing_strain = gff_data_cache[missing_strain_name] # [cite: 93
-                found_match_for_this_missing_strain = False # [cite: 93
+def get_gene_at_position(df, position):
+  gene_series = df.loc[df['position'] == position, 'gene']
+  if gene_series.empty:
+    return None
+  gene = gene_series.fillna('').iloc[0]
+  if not isinstance(gene, str) or gene.strip() == '':
+    return None
+  return gene
 
-                for anchor_search_direction in ["upstream", "downstream"]: # [cite: 93
-                    if found_match_for_this_missing_strain: break # [cite: 93
-                    ref_pos_range = range(-5, 0) if anchor_search_direction == "upstream" else range(1, 6) # [cite: 93]
+def get_full_gff_file_path(gff_dir, strain):
+  return os.path.join(gff_dir, strain + ".gff")
+
+
+def main(args):
+    """Main execution function"""
+    # Read input files and configurations from args
+    input_csv_path = args.input_context_csv
+    gff_dir = args.gff_dir
+    output_csv_path = args.output_compare_csv
+    threshold_match = args.match_threshold
+
+    # Derive the matches file name from the main output file name
+    base, ext = os.path.splitext(output_csv_path)
+    matches_csv_path = f"{base}_matches{ext}"
+    
+    print(f"Reading input context from: {input_csv_path}")
+    upstream_downstream_df = pd.read_csv(input_csv_path)
+
+    # Group by the central gene to find missing strains for each
+    missing_strains_dict = {}
+    for central_gene, gene_data in upstream_downstream_df.groupby('central_gene'):
+        present_strains = set(gene_data['strain'])
+        missing_strains = set(strain_columns) - present_strains
+        missing_strains_dict[central_gene] = list(missing_strains)
+
+    print(f"Loading GFF files from directory: {gff_dir}")
+    gff_dfs = {}
+    for strain_column in strain_columns:
+        gff_file_path = get_full_gff_file_path(gff_dir, strain_column)
+        if os.path.exists(gff_file_path):
+            gff_dfs[strain_column] = parse_gff_to_df(gff_file_path)
+        else:
+            print(f"Warning: GFF file not found for strain {strain_column} at {gff_file_path}")
+
+    # Prepare output files
+    csv_columns = ['position', 'gene', 'ID', 'type', 'start', 'end', 'strand', 'strain', 'central_gene']
+    matches_csv_columns = ['central_gene', 'missing_strain', 'reference_strain', 'downstream_matches', 'upstream_matches']
+    matches_df_list = []
+
+    print(f"Starting comparison... Writing synteny results to {output_csv_path}")
+    seen_matches = set()
+    with open(output_csv_path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(csv_columns)
+
+        # Iterate through each known context (central gene in a specific strain)
+        for (central_gene, strain), group in upstream_downstream_df.groupby(['central_gene', 'strain']):
+            filtered_df = group.copy()
+            
+            # Get the upstream/downstream gene sets for the known context
+            upstream_genes, downstream_genes = get_upstream_downstream_set(filtered_df, 'position')
+            
+            # Get the list of strains where this central gene is missing
+            missing_strains = missing_strains_dict.get(central_gene, [])
+
+            for missing_strain in missing_strains:
+                if missing_strain not in gff_dfs:
+                    continue # Skip if GFF for missing strain was not loaded
+
+                gff_df = gff_dfs[missing_strain]
+                found_match = False
+                
+                # Search using genes upstream of the known context
+                for position in range(-1, -6, -1):
+                    anchor_gene = get_gene_at_position(filtered_df, position)
+                    if anchor_gene is None:
+                        continue
                     
-                    for ref_pos in ref_pos_range: # [cite: 94]
-                        anchor_row = reference_context_df[reference_context_df['position'] == ref_pos]
-                        if anchor_row.empty:
-                            continue
-                            
-                        # Try to get ID first, then locus_tag
-                        anchor_id = anchor_row['ID'].iloc[0]
+                    result = extract_data_upstream_downstream(anchor_gene, gff_df.copy(), missing_strain, neighbors_count=9)
+                    
+                    if result is not None:
+                        found_match = True
+                        result['central_gene'] = central_gene
                         
-                        # Extract block using ID
-                        extracted_block_in_missing_strain = extract_syntenic_region_around_anchor(
-                            anchor_id,
-                            gff_df_for_missing_strain.copy(),
-                            missing_strain_name,
-                            neighbors_to_extract=9
-                        )
+                        # Compare the newly found context with the original known context
+                        new_up_genes, new_down_genes = get_upstream_downstream_set(result, 'position')
+                        upstream_matches, downstream_matches = check_matches(upstream_genes, downstream_genes, new_up_genes, new_down_genes)
+                        
+                        if upstream_matches >= threshold_match and downstream_matches >= threshold_match:
+                            match_key = (central_gene, missing_strain)
+                            if match_key not in seen_matches:
+                                seen_matches.add(match_key)
+                                result.to_csv(csvfile, header=False, index=False, columns=csv_columns)
+                            
+                            matches_df_list.append([central_gene, missing_strain, strain, downstream_matches, upstream_matches])
+                        break # Move to the next missing strain once a match is processed
+                
+                if found_match:
+                    continue
 
-                        if extracted_block_in_missing_strain is not None:
-                            block_upstream_set, block_downstream_set = get_gene_sets_from_context(extracted_block_in_missing_strain) # [cite: 96]
-                            num_upstream_matches = len(ref_upstream_set.intersection(block_upstream_set)) # [cite: 97
-                            num_downstream_matches = len(ref_downstream_set.intersection(block_downstream_set)) # [cite: 97
+                # If no match found upstream, search using genes downstream
+                for position in range(2, 6): # Original central gene is at pos 1, so start from 2
+                    anchor_gene = get_gene_at_position(filtered_df, position)
+                    if anchor_gene is None:
+                        continue
 
-                            if num_upstream_matches >= args.match_threshold and num_downstream_matches >= args.match_threshold: # [cite: 97]
-                                if (ref_roary_gene, missing_strain_name) not in synteny_block_written_for_pair: # [cite: 100]
-                                    extracted_block_in_missing_strain['central_gene'] = ref_roary_gene # [cite: 101]
-                                    # Ensure IDs are present in the extracted block
-                                    if 'ID' not in extracted_block_in_missing_strain.columns:
-                                        extracted_block_in_missing_strain['ID'] = extracted_block_in_missing_strain.index.map(lambda x: f"{missing_strain_name}_gene_{x}")
-                                    synteny_found_records_dfs.append(extracted_block_in_missing_strain) # [cite: 101]
-                                    synteny_block_written_for_pair.add((ref_roary_gene, missing_strain_name)) # [cite: 101]
-                                found_match_for_this_missing_strain = True # [cite: 102]
-                                break # [cite: 102]
+                    result = extract_data_upstream_downstream(anchor_gene, gff_df.copy(), missing_strain, neighbors_count=9)
+                    
+                    if result is not None:
+                        result['central_gene'] = central_gene
+                        new_up_genes, new_down_genes = get_upstream_downstream_set(result, 'position')
+                        upstream_matches, downstream_matches = check_matches(upstream_genes, downstream_genes, new_up_genes, new_down_genes)
+
+                        if upstream_matches >= threshold_match and downstream_matches >= threshold_match:
+                            match_key = (central_gene, missing_strain)
+                            if match_key not in seen_matches:
+                                seen_matches.add(match_key)
+                                result.to_csv(csvfile, header=False, index=False, columns=csv_columns)
+
+                            matches_df_list.append([central_gene, missing_strain, strain, downstream_matches, upstream_matches])
+                        break # Move to the next missing strain
     
-    compare_genes_output_df = pd.DataFrame(columns=output_compare_cols) # [cite: 102]
-    if synteny_found_records_dfs: # [cite: 102]
-        compare_genes_output_df = pd.concat(synteny_found_records_dfs, ignore_index=True) # [cite: 102]
-        # Ensure all expected columns are present, fill with NA if not, and set order
-        for col_loop_var_final_df in output_compare_cols: 
-            if col_loop_var_final_df not in compare_genes_output_df.columns:
-                compare_genes_output_df[col_loop_var_final_df] = pd.NA
-        compare_genes_output_df = compare_genes_output_df[output_compare_cols] # [cite: 102]
-        
-    # Add directory creation before writing output
-    output_dir = os.path.dirname(args.output_compare_csv)
-    if output_dir and not os.path.exists(output_dir):
-        os.makedirs(output_dir, exist_ok=True)
+    # Save the summary of matches
+    if matches_df_list:
+        matches_df = pd.DataFrame(matches_df_list, columns=matches_csv_columns)
+        matches_df.to_csv(matches_csv_path, index=False)
+        print(f"Wrote match summary to {matches_csv_path}")
     
-    try:
-        compare_genes_output_df.to_csv(args.output_compare_csv, index=False)
-        print(f"Syntenic regions data ({len(compare_genes_output_df)} rows) written to {args.output_compare_csv}")
-    except PermissionError:
-        alt_output = "compare_genes.csv"  # Fallback to current directory
-        compare_genes_output_df.to_csv(alt_output, index=False)
-        print(f"Permission denied for {args.output_compare_csv}")
-        print(f"Writing output to current directory instead: {alt_output}")
-    except Exception as e:
-        print(f"Error writing output: {e}")
-        return
+    print("Processing complete.")
 
-if __name__ == '__main__':
-    main()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Find and compare syntenic regions for genes missing in certain strains. "
+                    "It uses a known gene context from one strain to find a similar region in another "
+                    "strain where the central gene is absent."
+    )
+    parser.add_argument(
+        "--input_context_csv",
+        type=str,
+        required=True,
+        help="Path to the input CSV file containing known gene contexts (e.g., data_upstream_downstream.csv)."
+    )
+    parser.add_argument(
+        "--gff_dir",
+        type=str,
+        required=True,
+        help="Path to the directory containing all GFF files, named as <strain_name>.gff."
+    )
+    parser.add_argument(
+        "--output_compare_csv",
+        type=str,
+        required=True,
+        help="Path for the output CSV file that will contain the detailed syntenic regions found."
+    )
+    parser.add_argument(
+        "--match_threshold",
+        type=int,
+        default=2,
+        help="The minimum number of matching genes required in both upstream and downstream regions to be considered a syntenic match. Default is 2."
+    )
+    
+    args = parser.parse_args()
+    main(args)

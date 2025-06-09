@@ -1,0 +1,3945 @@
+BLASTN 2.16.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ./data/input/genome_fasta_files/ECOR47_PROKKA.fasta
+           66 sequences; 4,917,075 total letters
+
+
+
+Query= CFT073|2b84de5415a5ca9477dbe99a5510e5bf_84:fixA:HGG68_RS00205|2b84de
+5415a5ca9477dbe99a5510e5bf_84
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR11_PROKKA|ECOR11_02422:fixA:ECOR11_02422|ECOR11_02422
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1336    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1336 bits (723),  Expect = 0.0
+ Identities = 755/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGTTATCGCGCGGC  240
+               |||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTAATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||| ||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 48/56 (86%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  547     GATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||| |||   ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198854  GATATTAATATGCCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR14_PROKKA|ECOR14_03609:fixA_2:ECOR14_03609|ECOR14_03609
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1341    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1341 bits (726),  Expect = 0.0
+ Identities = 756/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATCTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| |||||||||||||||||||||||| |||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTCTGCTGGTGGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||| ||||||| ||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR16_PROKKA|ECOR16_02494:fixA_3:ECOR16_02494|ECOR16_02494
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1386    0.0  
+NZ_QOYG01000001.1                                                     86.1    5e-17
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1386 bits (750),  Expect = 0.0
+ Identities = 764/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTTGAGCAGGCACTGCCGCAACAAACG  300
+               ||||||||||||||||||||||||||||||||||| |||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 86.1 bits (46),  Expect = 5e-17
+ Identities = 165/223 (74%), Gaps = 6/223 (3%)
+ Strand=Plus/Plus
+
+Query  205     AACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGCCCGGATGAACTG-ATTGTGGTGAT  263
+               ||| | |||| ||||||||| |||||||| ||||| ||| ||   ||| ||| |||||  
+Sbjct  198515  AACTCGAAAGTGCGTAAAGACGTGCTATCCCGCGGGCCGCATAGCCTGTATT-TGGTGCA  198573
+
+Query  264     TGATGACCAGTTTGAGCAGGCACTGCCGCAACAAACGGCGAGCGCACTGGCTGCAGCCGC  323
+                ||||  ||  |||| || |||||||| |   | || || |  || ||||| ||||| | 
+Sbjct  198574  GGATGCGCAACTTGAACATGCACTGCCTCTCGATACCGCAAAGGCGCTGGCGGCAGCAGT  198633
+
+Query  324     CCAGAAAGCA-GGCTTTGATTTGATCCTCTGTGGCGATGGTTCTTCCGACCTTTATGCCC  382
+                 | ||||   ||||| |||||  |  ||| ||| || |||||   ||||||||||||||
+Sbjct  198634  TGA-AAAGATCGGCTTCGATTTACTGATCTTTGGTGAAGGTTCCGGCGACCTTTATGCCC  198692
+
+Query  383     AGCAGGTTGGTTTGCTGGTAGGCGAAATCCT-CAATATTCCGG  424
+               |||||||||| |||||||| || ||||| || |||  ||||||
+Sbjct  198693  AGCAGGTTGGCTTGCTGGTCGGAGAAATTCTGCAA-CTTCCGG  198734
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR23_PROKKA|ECOR23_00081:-:ECOR23_00081|ECOR23_00081
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR44_PROKKA|ECOR44_03240:-:ECOR44_03240|ECOR44_03240
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1380    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1380 bits (747),  Expect = 0.0
+ Identities = 763/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAATGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR48_PROKKA|ECOR48_02694:-:ECOR48_02694|ECOR48_02694
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1375    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1375 bits (744),  Expect = 0.0
+ Identities = 762/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTAACGGCCCTA  180
+               |||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATATCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||||||||||| |||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCACCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR49_PROKKA|ECOR49_04552:-:ECOR49_04552|ECOR49_04552
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1380    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1380 bits (747),  Expect = 0.0
+ Identities = 763/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGTCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||| ||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCCGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGGCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||| ||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR50_PROKKA|ECOR50_03184:-:ECOR50_03184|ECOR50_03184
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1336    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1336 bits (723),  Expect = 0.0
+ Identities = 755/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGTTATCGCGCGGC  240
+               |||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTAATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||| ||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 48/56 (86%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  547     GATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||| |||   ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198854  GATATTAATATGCCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR51_PROKKA|ECOR51_04841:-:ECOR51_04841|ECOR51_04841
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR52_PROKKA|ECOR52_00250:-:ECOR52_00250|ECOR52_00250
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR53_PROKKA|ECOR53_03080:-:ECOR53_03080|ECOR53_03080
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1347    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1347 bits (729),  Expect = 0.0
+ Identities = 757/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACGTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR54_PROKKA|ECOR54_00059:-:ECOR54_00059|ECOR54_00059
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR55_PROKKA|ECOR55_04724:-:ECOR55_04724|ECOR55_04724
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR56_PROKKA|ECOR56_04109:-:ECOR56_04109|ECOR56_04109
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR60_PROKKA|ECOR60_00990:-:ECOR60_00990|ECOR60_00990
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1347    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1347 bits (729),  Expect = 0.0
+ Identities = 757/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACGTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR61_PROKKA|ECOR61_02397:-:ECOR61_02397|ECOR61_02397
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR62_PROKKA|ECOR62_01670:-:ECOR62_01670|ECOR62_01670
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR64_PROKKA|ECOR64_03370:-:ECOR64_03370|ECOR64_03370
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCTGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTAGTAGGCGAAATCCTTAATATT  420
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR66_PROKKA|ECOR66_02367:-:ECOR66_02367|ECOR66_02367
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACT  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR6_PROKKA|ECOR6_02165:-:ECOR6_02165|ECOR6_02165
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGTTATCGCGCGGC  240
+               |||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTAATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||| ||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACGTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= ECOR8_PROKKA|ECOR8_02027:-:ECOR8_02027|ECOR8_02027
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1341    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1341 bits (726),  Expect = 0.0
+ Identities = 756/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTGAAC  120
+               ||||||||||| ||||||||||| |||||||||||||||||||||||||||||||| |||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTCTGCTGGTGGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||| ||||||| ||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 48/56 (86%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  547     GATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||| |||   ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198854  GATATTAATATGCCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE21|HKKLMMAK_03560:fixA_2:HKKLMMAK_03560|HKKLMMAK_03560
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE24|FLBELDDJ_00902:fixA_1:FLBELDDJ_00902|FLBELDDJ_00902
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1358    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1358 bits (735),  Expect = 0.0
+ Identities = 759/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE25|NKLEEENC_01272:fixA_1:NKLEEENC_01272|NKLEEENC_01272
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTTGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               ||||||||||||||||| |||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE26|AFHKKBMH_00693:fixA_1:AFHKKBMH_00693|AFHKKBMH_00693
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE4|NBLHDMPF_03676:fixA_2:NBLHDMPF_03676|NBLHDMPF_03676
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1347    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1347 bits (729),  Expect = 0.0
+ Identities = 757/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACGTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE40|EEHHMH_03515:fixA:EEHHMH_03515|EEHHMH_03515
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1424    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1424 bits (771),  Expect = 0.0
+ Identities = 771/771 (100%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  300
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE41|PNKGMM_24425:fixA:PNKGMM_24425|PNKGMM_24425
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCTGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTAGTAGGCGAAATCCTTAATATT  420
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE46|DADKIG_19550:fixA:DADKIG_19550|DADKIG_19550
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1330    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1330 bits (720),  Expect = 0.0
+ Identities = 754/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTGAAC  120
+               ||||||||||| ||||||||||| |||||||||||||||||||||||||||||||| |||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTCTGCTGGTGGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||| ||||||| ||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGGCTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||| | |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 48/56 (86%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  547     GATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||| |||   ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198854  GATATTAATATGCCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE47|NHFOKF_07850:fixA:NHFOKF_07850|NHFOKF_07850
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1424    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1424 bits (771),  Expect = 0.0
+ Identities = 771/771 (100%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  300
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE48_PROKKA|KE48_03540:fixA_2:KE48_03540|KE48_03540
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE50|OOFCCB_01070:fixA:OOFCCB_01070|OOFCCB_01070
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE51|BHDFJC_22500:fixA:BHDFJC_22500|BHDFJC_22500
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE54|NBPOCE_21230:fixA:NBPOCE_21230|NBPOCE_21230
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE55|HDLJKA_19485:fixA:HDLJKA_19485|HDLJKA_19485
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1347    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1347 bits (729),  Expect = 0.0
+ Identities = 757/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAAAGGGGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||| ||| ||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGTAGGCTTTGACTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||| ||||||||| ||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAAACCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCAGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= KE58|FKGHDH_19660:fixA:FKGHDH_19660|FKGHDH_19660
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1336    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1336 bits (723),  Expect = 0.0
+ Identities = 755/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGTTATCGCGCGGC  240
+               |||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTAATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||| ||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               |||||||||||||| |||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 48/56 (86%), Gaps = 0/56 (0%)
+ Strand=Plus/Plus
+
+Query  547     GATATCAATTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||| |||   ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198854  GATATTAATATGCCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= LRPF007|PGOAJBJE_03979:fixA_2:PGOAJBJE_03979|PGOAJBJE_03979
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGTAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||| ||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCTGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= LRPF62|CPONALDP_04165:fixA_2:CPONALDP_04165|CPONALDP_04165
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTTGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               ||||||||||||||||| |||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTTGCTGCAGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||| ||||| ||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= MG1655|9d38f563c3a26fdef9221ebcd767f53a_88:fixA:b0041|9d38f563c3a26f
+def9221ebcd767f53a_88
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1341    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1341 bits (726),  Expect = 0.0
+ Identities = 756/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATCTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| |||||||||||||||||||||||| |||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTCTGCTGGTGGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||| ||||||| ||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= UTI89|a370e86af943a50f23d4c066bcb16592_84:fixA:IFE20_RS00205|a370e86
+af943a50f23d4c066bcb16592_84
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1363    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1363 bits (738),  Expect = 0.0
+ Identities = 760/771 (99%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCGTTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||||||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGT  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGTACTGGCTGCAGCCGCTCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  360
+               |||| || ||||||||| ||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTTAATATT  420
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACTGCAGATACCCTCACCGTTGAG  480
+               |||||||||||||||||||||||||||||||||||||| |||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  720
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+Query= W3110|a99aee7d8774ee1318b35b64abeb3eab_80:fixA:Y75_RS00215|a99aee7d8
+774ee1318b35b64abeb3eab_80
+
+Length=771
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NZ_QOYG01000004.1                                                     1341    0.0  
+NZ_QOYG01000001.1                                                     60.2    3e-09
+
+
+>NZ_QOYG01000004.1
+Length=256634
+
+ Score = 1341 bits (726),  Expect = 0.0
+ Identities = 756/771 (98%), Gaps = 0/771 (0%)
+ Strand=Plus/Minus
+
+Query  1       ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  60
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179785  ATGAAGATTATTACTTGCTATAAGTGCGTGCCTGATGAACAGGATATTGCGGTCAATAAT  179726
+
+Query  61      GCTGATGGTTCATTAGACTTCAGCAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  120
+               ||||||||||| ||||||||||| ||||||||||||||||||||||||||||||||||||
+Sbjct  179725  GCTGATGGTTCGTTAGACTTCAGTAAAGCCGATGCCAAAATAAGCCAATACGATCTCAAC  179666
+
+Query  121     GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACAGCCTTA  180
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||| ||
+Sbjct  179665  GCTATTGAAGCGGCTTGCCAGCTAAAGCAACAGGCAGCAGAGGCGCAGGTGACGGCCCTA  179606
+
+Query  181     AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  240
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179605  AGTGTGGGCGGTAAAGCCCTGACCAACGCCAAAGGGCGTAAAGATGTGCTATCGCGCGGC  179546
+
+Query  241     CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCAGGCACTGCCGCAACAAACG  300
+               |||||||||||||||||||||||||||||||||||||||| |||||||||||||||||| 
+Sbjct  179545  CCGGATGAACTGATTGTGGTGATTGATGACCAGTTCGAGCGGGCACTGCCGCAACAAACA  179486
+
+Query  301     GCGAGCGCACTGGCTGCAGCCGCCCAGAAAGCAGGCTTTGATCTGATCCTCTGTGGCGAT  360
+               |||| |||||||||||| |||||||||||||||||||||||| |||||||||||||||||
+Sbjct  179485  GCGACCGCACTGGCTGCTGCCGCCCAGAAAGCAGGCTTTGATTTGATCCTCTGTGGCGAT  179426
+
+Query  361     GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTCTGCTGGTGGGCGAAATCCTCAATATT  420
+               ||||||||||||||||||||||||||||||||| ||||||| ||||||||||||||||||
+Sbjct  179425  GGTTCTTCCGACCTTTATGCCCAGCAGGTTGGTTTGCTGGTAGGCGAAATCCTCAATATT  179366
+
+Query  421     CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  480
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179365  CCGGCAGTTAACGGCGTCAGCAAAATTATCTCCCTGACGGCAGATACCCTCACCGTTGAG  179306
+
+Query  481     CGCGAACTGGAAGATGAAACCGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  540
+               |||||||||||||||||||| |||||||||||||||||||||||||||||||||||||||
+Sbjct  179305  CGCGAACTGGAAGATGAAACAGAAACCTTAAGCATTCCGCTGCCTGCGGTTGTTGCTGTT  179246
+
+Query  541     TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  600
+               ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179245  TCCACTGATATCAACTCCCCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAA  179186
+
+Query  601     AAGCCCGTCCAGGTATGGTCGGCGGCGGATATTGGTTTTAACGCAGAGGCAGCCTGGTCA  660
+               ||||| |||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179185  AAGCCAGTCCAGGTATGGTCGGCGGCGGATATCGGTTTTAACGCAGAGGCAGCCTGGTCA  179126
+
+Query  661     GAACAACAGGTTGCCGCGCCGAAACAGCGCGAACGTCAGCGCATCGTGATTGAAGGCGAC  720
+               |||||||||||||||||||||||||||||||| |||||||||||||||||||||||||||
+Sbjct  179125  GAACAACAGGTTGCCGCGCCGAAACAGCGCGAGCGTCAGCGCATCGTGATTGAAGGCGAC  179066
+
+Query  721     GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  771
+               |||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  179065  GGCGAAGAACAGATCGCCGCATTTGCTGAAAATCTTCGCAAAGTCATTTAA  179015
+
+
+>NZ_QOYG01000001.1
+Length=782163
+
+ Score = 60.2 bits (32),  Expect = 3e-09
+ Identities = 40/44 (91%), Gaps = 0/44 (0%)
+ Strand=Plus/Plus
+
+Query  559     CCACAAATTCCTTCGATGAAAGCCATTCTCGGCGCGGCGAAAAA  602
+               ||||  |||||||||||||||||||||||||||||||  |||||
+Sbjct  198866  CCACGCATTCCTTCGATGAAAGCCATTCTCGGCGCGGGTAAAAA  198909
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3681801627
+
+
+  Database: ./data/input/genome_fasta_files/ECOR47_PROKKA.fasta
+    Posted date:  Jun 8, 2025  7:04 PM
+  Number of letters in database: 4,917,075
+  Number of sequences in database:  66
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

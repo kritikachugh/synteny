@@ -29,7 +29,7 @@ BLAST_PLUS_BIN_PATH="./output/blast_final_results/blast_bin/"  # ADJUST THIS or 
 # --- Intermediate and Final Output Filenames ---
 # Script 1 outputs
 MISSING_GENE_DATA_CSV="./output/missing_gene_data.csv"
-UPSTREAM_DOWNSTREAM_CSV="./output/data_upstream_downstream.csv"
+UPSTREAM_DOWNSTREAM_CSV="./output/data_upstream_downstream_old.csv"
 # Script 2 outputs
 COMPARE_GENES_CSV="./output/compare_genes.csv"
 COMPARE_GENES_MATCHES_CSV="./output/compare_genes_matches.csv"
@@ -69,7 +69,7 @@ mkdir -p "$BLAST_OUTPUT_SUBDIR"
 echo "Pre-run checks completed."
 echo ""
 
-# --- Step 1: Extract Upstream/Downstream Gene Context ---
+# # --- Step 1: Extract Upstream/Downstream Gene Context ---
 # echo "--- [Step 1/7] Running upstream_downstream_gene_id.py ---"
 # $PYTHON_EXECUTABLE "$SCRIPT_DIR/upstream_downstream_gene_id.py" \
 #  --presence_absence_csv "$INITIAL_GENE_PRESENCE_ABSENCE_CSV" \
@@ -102,57 +102,57 @@ echo ""
 # echo ""
 
 # --- Step 4: Create Wide Table (all_strains_sorted_with_id.csv) ---
-# echo "--- [Step 4/7] Running create_sorted_strains_table.py ---"
-# check_file "$UPSTREAM_DOWNSTREAM_CSV"
-# check_file "$COMPARE_GENES_CORE_STATUS_CSV"
-# $PYTHON_EXECUTABLE "$SCRIPT_DIR/create_sorted_strains_table.py" \
-#   --input_upstream_downstream_csv "$UPSTREAM_DOWNSTREAM_CSV" \
-#   --input_compare_genes_core_status_csv "$COMPARE_GENES_CORE_STATUS_CSV" \
-#   --output_sorted_wide_csv "$ALL_STRAINS_SORTED_WIDE_CSV" \
-#   --min_position -5 \
-#   --max_position 5
-# echo "Step 4 completed. Output: $ALL_STRAINS_SORTED_WIDE_CSV"
-# echo ""
+echo "--- [Step 4/7] Running create_sorted_strains_table.py ---"
+check_file "$UPSTREAM_DOWNSTREAM_CSV"
+check_file "$COMPARE_GENES_CORE_STATUS_CSV"
+$PYTHON_EXECUTABLE "$SCRIPT_DIR/create_sorted_strains_table.py" \
+  --input_upstream_downstream_csv "$UPSTREAM_DOWNSTREAM_CSV" \
+  --input_compare_genes_core_status_csv "$COMPARE_GENES_CORE_STATUS_CSV" \
+  --output_sorted_wide_csv "$ALL_STRAINS_SORTED_WIDE_CSV" \
+  --min_position -5 \
+  --max_position 5
+echo "Step 4 completed. Output: $ALL_STRAINS_SORTED_WIDE_CSV"
+echo ""
 
-# # --- Step 5: Generate/Refine DataFrame for BLAST Input (Conditional Reversal) ---
-# echo "--- [Step 5/7] Running reverse_df_logic.py ---"
-# check_file "$ALL_STRAINS_SORTED_WIDE_CSV" 
-# $PYTHON_EXECUTABLE "$SCRIPT_DIR/reverse_df_logic.py" \
-#   --input_sorted_wide_csv "$ALL_STRAINS_SORTED_WIDE_CSV" \
-#   --output_reversed_csv "$REVERSED_DF_FOR_BLAST_CSV" \
-#   --min_position -5 \
-#   --max_position 5
-# echo "Step 5 completed. Output: $REVERSED_DF_FOR_BLAST_CSV"
-# echo ""
+# --- Step 5: Generate/Refine DataFrame for BLAST Input (Conditional Reversal) ---
+echo "--- [Step 5/7] Running reverse_df_logic.py ---"
+check_file "$ALL_STRAINS_SORTED_WIDE_CSV" 
+$PYTHON_EXECUTABLE "$SCRIPT_DIR/reverse_df_logic.py" \
+  --input_sorted_wide_csv "$ALL_STRAINS_SORTED_WIDE_CSV" \
+  --output_reversed_csv "$REVERSED_DF_FOR_BLAST_CSV" \
+  --min_position -5 \
+  --max_position 5
+echo "Step 5 completed. Output: $REVERSED_DF_FOR_BLAST_CSV"
+echo ""
 
-# # --- Step 6: Extract CDS Sequences ---
-# echo "--- [Step 6/7] Running cds_sequence.py ---"
-# check_file "$INITIAL_GENE_PRESENCE_ABSENCE_CSV"
-# $PYTHON_EXECUTABLE "$SCRIPT_DIR/cds_sequence.py" \
-#   --presence_absence_csv "$INITIAL_GENE_PRESENCE_ABSENCE_CSV" \
-#   --cds_dir "$CDS_DIR" \
-#   --output_csv "$SEQUENCE_DATA_CSV"
-# echo "Step 6 completed. Output: $SEQUENCE_DATA_CSV"
-# echo ""
+# --- Step 6: Extract CDS Sequences ---
+echo "--- [Step 6/7] Running cds_sequence.py ---"
+check_file "$INITIAL_GENE_PRESENCE_ABSENCE_CSV"
+$PYTHON_EXECUTABLE "$SCRIPT_DIR/cds_sequence.py" \
+  --presence_absence_csv "$INITIAL_GENE_PRESENCE_ABSENCE_CSV" \
+  --cds_dir "$CDS_DIR" \
+  --output_csv "$SEQUENCE_DATA_CSV"
+echo "Step 6 completed. Output: $SEQUENCE_DATA_CSV"
+echo ""
 
 # # --- Step 7: Perform BLAST Searches ---
-# echo "--- [Step 7/7] Running blast_central_genes.py ---"
-# check_file "$REVERSED_DF_FOR_BLAST_CSV" 
+echo "--- [Step 7/7] Running blast_central_genes.py ---"
+check_file "$REVERSED_DF_FOR_BLAST_CSV" 
 
-# BLAST_BIN_ARG_FOR_SCRIPT=""
-# if [ -n "$BLAST_PLUS_BIN_PATH" ]; then
-#   BLAST_BIN_ARG_FOR_SCRIPT="--blast_bin_path \"$BLAST_PLUS_BIN_PATH\"" 
-# fi
+BLAST_BIN_ARG_FOR_SCRIPT=""
+if [ -n "$BLAST_PLUS_BIN_PATH" ]; then
+  BLAST_BIN_ARG_FOR_SCRIPT="--blast_bin_path \"$BLAST_PLUS_BIN_PATH\"" 
+fi
 
-# $PYTHON_EXECUTABLE "$SCRIPT_DIR/blast_central_genes.py" \
-#   --input_reversed_csv "$REVERSED_DF_FOR_BLAST_CSV" \
-#   --cds_files_dir "$CDS_DIR" \
-#   --genome_fasta_dir "$GENOME_FASTA_DIR" \
-#   --blast_output_dir "$BLAST_OUTPUT_SUBDIR" \
-#   --no_hits_output_file "$BLAST_NO_HITS_SUMMARY_CSV" \
-#   $BLAST_BIN_ARG_FOR_SCRIPT
-# echo "Step 7 completed. BLAST results are in $BLAST_OUTPUT_SUBDIR. No-hits summary: $BLAST_NO_HITS_SUMMARY_CSV"
-# echo ""
+$PYTHON_EXECUTABLE "$SCRIPT_DIR/blast_central_genes.py" \
+  --input_reversed_csv "$REVERSED_DF_FOR_BLAST_CSV" \
+  --cds_files_dir "$CDS_DIR" \
+  --genome_fasta_dir "$GENOME_FASTA_DIR" \
+  --blast_output_dir "$BLAST_OUTPUT_SUBDIR" \
+  --no_hits_output_file "$BLAST_NO_HITS_SUMMARY_CSV" \
+  $BLAST_BIN_ARG_FOR_SCRIPT
+echo "Step 7 completed. BLAST results are in $BLAST_OUTPUT_SUBDIR. No-hits summary: $BLAST_NO_HITS_SUMMARY_CSV"
+echo ""
 
 echo "===== Complete Analysis Pipeline Finished Successfully ====="
 echo "Timestamp: $(date)"

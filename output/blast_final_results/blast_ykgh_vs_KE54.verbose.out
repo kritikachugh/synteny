@@ -1,0 +1,825 @@
+BLASTN 2.16.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: ./data/input/genome_fasta_files/KE54.fasta
+           2 sequences; 5,455,756 total letters
+
+
+
+Query= CFT073|2b84de5415a5ca9477dbe99a5510e5bf_773:HGG68_RS01885:HGG68_RS01
+885|2b84de5415a5ca9477dbe99a5510e5bf_773
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR11_PROKKA|ECOR11_02794:ykgH:ECOR11_02794|ECOR11_02794
+
+Length=585
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3071565856
+
+
+Query= ECOR14_PROKKA|ECOR14_01562:-:ECOR14_01562|ECOR14_01562
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR16_PROKKA|ECOR16_03623:-:ECOR16_03623|ECOR16_03623
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR23_PROKKA|ECOR23_00305:-:ECOR23_00305|ECOR23_00305
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR44_PROKKA|ECOR44_02916:-:ECOR44_02916|ECOR44_02916
+
+Length=573
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3006097312
+
+
+Query= ECOR48_PROKKA|ECOR48_04099:-:ECOR48_04099|ECOR48_04099
+
+Length=567
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2973363040
+
+
+Query= ECOR49_PROKKA|ECOR49_00920:-:ECOR49_00920|ECOR49_00920
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR4_PROKKA|ECOR4_03321:-:ECOR4_03321|ECOR4_03321
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR50_PROKKA|ECOR50_00127:-:ECOR50_00127|ECOR50_00127
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR51_PROKKA|ECOR51_00550:-:ECOR51_00550|ECOR51_00550
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR52_PROKKA|ECOR52_00352:-:ECOR52_00352|ECOR52_00352
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR53_PROKKA|ECOR53_00041:-:ECOR53_00041|ECOR53_00041
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR54_PROKKA|ECOR54_00425:-:ECOR54_00425|ECOR54_00425
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR55_PROKKA|ECOR55_00410:-:ECOR55_00410|ECOR55_00410
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR56_PROKKA|ECOR56_00800:-:ECOR56_00800|ECOR56_00800
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR60_PROKKA|ECOR60_04009:-:ECOR60_04009|ECOR60_04009
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR61_PROKKA|ECOR61_03291:-:ECOR61_03291|ECOR61_03291
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR62_PROKKA|ECOR62_03631:-:ECOR62_03631|ECOR62_03631
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR64_PROKKA|ECOR64_03681:-:ECOR64_03681|ECOR64_03681
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR66_PROKKA|ECOR66_00611:-:ECOR66_00611|ECOR66_00611
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR6_PROKKA|ECOR6_04031:-:ECOR6_04031|ECOR6_04031
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= ECOR8_PROKKA|ECOR8_00991:-:ECOR8_00991|ECOR8_00991
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE21|HKKLMMAK_03867:HKKLMMAK_03867:HKKLMMAK_03867|HKKLMMAK_03867
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE24|FLBELDDJ_00567:FLBELDDJ_00567:FLBELDDJ_00567|FLBELDDJ_00567
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE25|NKLEEENC_01014:NKLEEENC_01014:NKLEEENC_01014|NKLEEENC_01014
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE26|AFHKKBMH_00952:AFHKKBMH_00952:AFHKKBMH_00952|AFHKKBMH_00952
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE4|NBLHDMPF_03394:NBLHDMPF_03394:NBLHDMPF_03394|NBLHDMPF_03394
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE40|EEHHMH_05175:EEHHMH_05175:EEHHMH_05175|EEHHMH_05175
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE41|PNKGMM_22780:PNKGMM_22780:PNKGMM_22780|PNKGMM_22780
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE46|DADKIG_17740:DADKIG_17740:DADKIG_17740|DADKIG_17740
+
+Length=666
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3513478528
+
+
+Query= KE47|NHFOKF_06420:NHFOKF_06420:NHFOKF_06420|NHFOKF_06420
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE48_PROKKA|KE48_00910:-:KE48_00910|KE48_00910
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE50|OOFCCB_24220:OOFCCB_24220:OOFCCB_24220|OOFCCB_24220
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE51|BHDFJC_20805:BHDFJC_20805:BHDFJC_20805|BHDFJC_20805
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= KE55|HDLJKA_18095:HDLJKA_18095:HDLJKA_18095|HDLJKA_18095
+
+Length=357
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1827663520
+
+
+Query= KE58|FKGHDH_18240:ykgH:FKGHDH_18240|FKGHDH_18240
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= LRPF007|PGOAJBJE_02335:PGOAJBJE_02335:PGOAJBJE_02335|PGOAJBJE_02335
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= LRPF62|CPONALDP_03904:CPONALDP_03904:CPONALDP_03904|CPONALDP_03904
+
+Length=627
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3300705760
+
+
+Query= MG1655|9d38f563c3a26fdef9221ebcd767f53a_682:ykgH:b0310|9d38f563c3a26
+fdef9221ebcd767f53a_682
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= UTI89|a370e86af943a50f23d4c066bcb16592_654:IFE20_RS01600:IFE20_RS016
+00|a370e86af943a50f23d4c066bcb16592_654
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+Query= W3110|a99aee7d8774ee1318b35b64abeb3eab_652:Y75_RS01600:Y75_RS01600|a
+99aee7d8774ee1318b35b64abeb3eab_652
+
+Length=669
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3529845664
+
+
+  Database: ./data/input/genome_fasta_files/KE54.fasta
+    Posted date:  Jun 8, 2025  7:04 PM
+  Number of letters in database: 5,455,756
+  Number of sequences in database:  2
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

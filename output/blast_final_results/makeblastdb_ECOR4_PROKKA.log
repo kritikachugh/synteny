@@ -1,0 +1,38 @@
+
+
+Building a new DB, current time: 06/08/2025 19:03:53
+New DB name:   C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR4_PROKKA
+New DB title:  ./data/input/genome_fasta_files/ECOR4_PROKKA.fasta
+Sequence type: Nucleotide
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 105 sequences in 0.031289 seconds.
+
+
+BLAST Database error: Database memory map file error
+
+
+Building a new DB, current time: 06/08/2025 19:04:50
+New DB name:   C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR4_PROKKA
+New DB title:  ./data/input/genome_fasta_files/ECOR4_PROKKA.fasta
+Sequence type: Nucleotide
+Deleted existing Nucleotide BLAST database named C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR4_PROKKA
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 105 sequences in 0.0263531 seconds.
+
+
+BLAST Database error: Database memory map file error
+
+
+Building a new DB, current time: 06/08/2025 19:05:14
+New DB name:   C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR4_PROKKA
+New DB title:  ./data/input/genome_fasta_files/ECOR4_PROKKA.fasta
+Sequence type: Nucleotide
+Deleted existing Nucleotide BLAST database named C:\Users\Kriti\Desktop\Prof. Xuan lab work\Roary python files\py files\command_line\output\blast_final_results\db_ECOR4_PROKKA
+Keep MBits: T
+Maximum file size: 3000000000B
+Adding sequences from FASTA; added 105 sequences in 0.0328137 seconds.
+
+
+BLAST Database error: Database memory map file error
